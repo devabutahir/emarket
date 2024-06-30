@@ -1,0 +1,181 @@
+// Container Maintain 
+.custom-container{
+   @media screen and (min-width: 991px) {
+    max-width: 1326px;
+    margin: 0 auto;
+   }
+}
+// Container Maintain 
+
+// Support Feature
+.support__fetaure{
+    margin-bottom: 60px;
+}
+.support-feature-item{
+    background: var(--box);
+    border-radius: 8px;
+    border: 1px solid var(--border1);
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .content{
+        h4{
+           font-size: 20px;
+           font-weight: 500;
+           color: var(--n500);
+           margin-bottom: 2px; 
+            line-height: 150%;
+
+        }
+        span{
+            color: var(--n500);
+            font-size: 14px;
+            line-height: 150%;
+            display: block;
+        }
+    }
+}
+.feature-btn-grp{
+    position: absolute;
+    top: 50%;
+    width: 93%;    
+    transform: translateY(-50%);
+    z-index: 1;
+    left: 10px;
+    right: 10px;
+    .sup-pre,
+    .sup-next{
+        width: 28px;
+        height: 28px;
+        border: 1px solid var(--p1);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--n0);
+        i{
+            color: var(--p1);
+        }
+    }
+}
+// Support Feature
+
+// Flash Deals
+.flash__deals{
+    .countdown{
+        display: flex;
+        gap: 8px;
+        .countdown-item{
+            border: 1px solid var(--p1);
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: flex;
+            span{
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--p1);
+                font-family: "IBM Plex Sans", sans-serif;
+            }
+        }
+    }
+    .flash_header{
+        margin-bottom: 40px;
+    }
+    .flash-deals-item{
+        transition: all 0.4s;
+        border-radius: 8px;
+        background: var(--n0);
+        border: 1px solid var(--n30);
+        .thumb{
+            overflow: hidden;
+            img{
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+            .off-badge{
+                background: var(--p1);
+                border-radius: 4px;
+                padding: 4px 8px;
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--n0);
+                position: absolute;
+                top: 16px;
+                left: 16px;
+            }
+            .active-badge{
+                
+            }
+        }
+        .content{
+            padding: 24px;
+            .deals-name{
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--p1);
+                display: block;
+                margin-bottom: 10px;
+            }
+            h6{
+                margin-bottom: 14px;
+                a{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: var(--n500);
+                    line-height: 150%;
+                    display: block;
+                }
+            }
+            .ratting{
+                margin-bottom: 16px;
+                i{
+                    color: var(--s1);
+                    font-size: 26px;
+                }
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--n500);
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                del{
+                    font-weight: 400;
+                    color: var(--n100);
+                    font-size: 18px;
+                }
+            }
+        }
+        &:hover{
+            .thumb{
+                img{
+                    transform: scale(1.08);
+                }
+            }
+        }
+    }
+}
+.flash_header{
+    span,
+    h2{
+        font-size: 40px;
+        color: var(--n500);
+        line-height: 120%;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        span{
+            color: var(--p1);
+        }
+    }
+}
+.time-countdown{
+    .countdown {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+// Flash Deals

@@ -1,0 +1,700 @@
+/*============================================ 
+# Template Name: E-Market
+# Version: 1.0
+# Date: 
+# Author: 
+# Description: E-Market
+============================================*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+html {
+  scroll-behavior: initial !important;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background: var(--s4);
+  color: var(--n0);
+  font-size: 18px;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+}
+
+section,
+footer {
+  overflow: hidden;
+}
+
+a,
+p,
+button,
+span,
+label,
+li {
+  margin: 0;
+  font-weight: 400;
+}
+a i,
+p i,
+button i,
+span i,
+label i,
+li i {
+  font-weight: 400;
+}
+
+:root {
+  --p1: #3E9172;
+  --s1: #FDAD00;
+  --s2: #FF5252;
+  --n0: #fff;
+  --n500: #404A60;
+  --n100: #798090;
+  --n30: #EBECEF;
+  --box: #F5F6F7;
+  --border1: #EBECEF;
+}
+
+.p1 {
+  color: var(--p1);
+}
+
+.s1 {
+  color: var(--s1);
+}
+
+.s2 {
+  color: var(--p1);
+}
+
+.n0 {
+  color: var(--n0);
+}
+
+.n500 {
+  color: var(--n500);
+}
+
+.n100 {
+  color: var(--n100);
+}
+
+.n30 {
+  color: var(--n30);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+a:focus, a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a i {
+  font-weight: 400;
+}
+
+span,
+h1,
+h1 > a,
+h2,
+h2 > a,
+h3,
+h3 > a,
+h4,
+h4 > a,
+h5,
+h5 > a,
+h6,
+h6 > a,
+.display-one, .display-two, .display-three, .display-four, .display-five, .display-six, .heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: var(--n900);
+  line-height: 128%;
+  display: block;
+  transition: var(--transition);
+}
+span span,
+h1 span,
+h1 > a span,
+h2 span,
+h2 > a span,
+h3 span,
+h3 > a span,
+h4 span,
+h4 > a span,
+h5 span,
+h5 > a span,
+h6 span,
+h6 > a span,
+.display-one span, .display-two span, .display-three span, .display-four span, .display-five span, .display-six span, .heading span {
+  color: inherit;
+  line-height: inherit;
+}
+span i,
+h1 i,
+h1 > a i,
+h2 i,
+h2 > a i,
+h3 i,
+h3 > a i,
+h4 i,
+h4 > a i,
+h5 i,
+h5 > a i,
+h6 i,
+h6 > a i,
+.display-one i, .display-two i, .display-three i, .display-four i, .display-five i, .display-six i, .heading i {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul li,
+ol li {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 0;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  padding: 10px 20px;
+  width: 100%;
+  font-family: var(--body-font);
+  outline-color: transparent;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: transparent;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 16px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 16px;
+}
+input:focus,
+textarea:focus {
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+::-moz-placeholder {
+  font-size: 14px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=checkbox] {
+  width: initial;
+  height: initial;
+}
+
+.alt-color a, .alt-color p, .alt-color span, .alt-color h1, .alt-color h2, .alt-color h3, .alt-color h4, .alt-color h5, .alt-color h6, .alt-color i, .alt-color select, .alt-color button {
+  transition: all 0.4s;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+span,
+p {
+  color: var(--pp-clr);
+  line-height: 150%;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+
+.p1-clr {
+  color: var(--p1);
+}
+
+.p1-bg {
+  background: var(--p1);
+}
+
+.pp-clr {
+  color: var(--pp-clr);
+}
+
+.n0-clr {
+  color: var(--n0);
+}
+
+.n0-bg {
+  background: var(--n0);
+}
+
+.n00-clr {
+  color: var(--n00);
+}
+
+.n00-bg {
+  background: var(--n00);
+}
+
+.n900-bg {
+  background: var(--n900);
+}
+
+.n900-clr {
+  color: var(--n900);
+}
+
+.p900-clr {
+  color: var(--p900);
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.box-bg {
+  background: var(--box-bg);
+}
+
+.section-bg {
+  background: var(--section-bg);
+}
+
+.dots-cmn {
+  width: 4px;
+  height: 4px;
+  background: var(--n900);
+  border-radius: 50%;
+  display: block;
+}
+
+.ul-dots li {
+  list-style: disc;
+}
+
+.ul-decimal li {
+  list-style: decimal;
+}
+
+span {
+  display: inline-block;
+}
+
+.transition {
+  transition: 0.5s;
+}
+
+.table thead th,
+.table td,
+.table th {
+  border: none;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-thumb {
+  background: var(--p1);
+}
+
+.d-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.cus-z1 {
+  z-index: 1;
+}
+
+.singleTab .nav-links {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.singleTab .nav-links button {
+  transition: all 0.4s;
+}
+.singleTab .nav-links.active button {
+  background: var(--p1);
+  border-color: var(--p1);
+  color: var(--n0);
+}
+.singleTab .tabContents {
+  position: relative;
+}
+.singleTab .tabContents .tabItem {
+  transform: translateY(100px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s all;
+}
+.singleTab .tabContents .tabItem.active {
+  position: initial;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nice-select {
+  background-color: transparent;
+  border: transparent;
+  float: initial;
+  overflow: initial;
+  height: initial;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  line-height: 150%;
+  width: 100%;
+}
+.nice-select:focus, .nice-select:hover {
+  border-color: transparent;
+}
+.nice-select::after {
+  height: 10px;
+  width: 10px;
+  right: 15px;
+  top: initial;
+  border-color: var(--n900);
+}
+.nice-select .list {
+  width: initial;
+  background-color: var(--s7);
+  box-shadow: none;
+  overflow: initial;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  width: 100%;
+  top: 100%;
+  padding: 0;
+  max-height: 50vh;
+  overflow-x: auto;
+  padding: 8px 16px;
+}
+.nice-select .list::-webkit-scrollbar {
+  width: 2px;
+  opacity: 1;
+  display: block;
+}
+.nice-select .list::-webkit-scrollbar-button, .nice-select .list::-webkit-scrollbar-thumb {
+  background: var(--s2);
+}
+.nice-select .list li {
+  color: var(--n900) !important;
+}
+.nice-select .option {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 4px 5px;
+  min-height: initial;
+  font-weight: 500;
+}
+.nice-select .option:hover, .nice-select .option:focus, .nice-select .option.selected.focus {
+  background-color: transparent;
+}
+.nice-select .current {
+  font-weight: 500;
+}
+
+.cmn-overlay {
+  transition: all 0.8s;
+  background: rgba(2, 1, 1, 0.78);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  height: 0%;
+  width: 100%;
+  right: 0;
+}
+.cmn-overlay.active {
+  height: 100%;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-popup-custom form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--n100);
+}
+.search-popup-custom form input {
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--n100);
+  outline: none;
+  border: unset;
+  padding: 16px 15px;
+}
+.search-popup-custom form i {
+  padding-right: 16px;
+  font-size: 20px;
+  color: var(--n100);
+}
+.search-popup-custom form ::-moz-placeholder {
+  color: var(--n50);
+}
+.search-popup-custom form ::placeholder {
+  color: var(--n50);
+}
+
+@media screen and (min-width: 991px) {
+  .custom-container {
+    max-width: 1326px;
+    margin: 0 auto;
+  }
+}
+
+.support__fetaure {
+  margin-bottom: 60px;
+}
+
+.support-feature-item {
+  background: var(--box);
+  border-radius: 8px;
+  border: 1px solid var(--border1);
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.support-feature-item .content h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--n500);
+  margin-bottom: 2px;
+  line-height: 150%;
+}
+.support-feature-item .content span {
+  color: var(--n500);
+  font-size: 14px;
+  line-height: 150%;
+  display: block;
+}
+
+.feature-btn-grp {
+  position: absolute;
+  top: 50%;
+  width: 93%;
+  transform: translateY(-50%);
+  z-index: 1;
+  left: 10px;
+  right: 10px;
+}
+.feature-btn-grp .sup-pre,
+.feature-btn-grp .sup-next {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--p1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--n0);
+}
+.feature-btn-grp .sup-pre i,
+.feature-btn-grp .sup-next i {
+  color: var(--p1);
+}
+
+.flash__deals .countdown {
+  display: flex;
+  gap: 8px;
+}
+.flash__deals .countdown .countdown-item {
+  border: 1px solid var(--p1);
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+}
+.flash__deals .countdown .countdown-item span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--p1);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.flash__deals .flash_header {
+  margin-bottom: 40px;
+}
+.flash__deals .flash-deals-item {
+  transition: all 0.4s;
+  border-radius: 8px;
+  background: var(--n0);
+  border: 1px solid var(--n30);
+}
+.flash__deals .flash-deals-item .thumb {
+  overflow: hidden;
+}
+.flash__deals .flash-deals-item .thumb img {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.flash__deals .flash-deals-item .thumb .off-badge {
+  background: var(--p1);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--n0);
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.flash__deals .flash-deals-item .content {
+  padding: 24px;
+}
+.flash__deals .flash-deals-item .content .deals-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--p1);
+  display: block;
+  margin-bottom: 10px;
+}
+.flash__deals .flash-deals-item .content h6 {
+  margin-bottom: 14px;
+}
+.flash__deals .flash-deals-item .content h6 a {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--n500);
+  line-height: 150%;
+  display: block;
+}
+.flash__deals .flash-deals-item .content .ratting {
+  margin-bottom: 16px;
+}
+.flash__deals .flash-deals-item .content .ratting i {
+  color: var(--s1);
+  font-size: 26px;
+}
+.flash__deals .flash-deals-item .content h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--n500);
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.flash__deals .flash-deals-item .content h4 del {
+  font-weight: 400;
+  color: var(--n100);
+  font-size: 18px;
+}
+.flash__deals .flash-deals-item:hover .thumb img {
+  transform: scale(1.08);
+}
+
+.flash_header span,
+.flash_header h2 {
+  font-size: 40px;
+  color: var(--n500);
+  line-height: 120%;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.flash_header span span,
+.flash_header h2 span {
+  color: var(--p1);
+}
+
+.time-countdown .countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .support-feature-item {
+    padding: 16px 16px;
+    display: grid;
+    gap: 10px;
+    height: 100% !important;
+  }
+  .support-feature-item .content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .support-feature-item .content span {
+    font-size: 13px;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .support-feature-item {
+    padding: 14px 10px;
+    display: grid;
+    gap: 10px;
+    height: 100% !important;
+  }
+  .support-feature-item .content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .support-feature-item .content span {
+    font-size: 13px;
+    line-height: 150%;
+  }
+}/*# sourceMappingURL=main.css.map */
