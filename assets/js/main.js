@@ -42,8 +42,7 @@ function updateCountdown(countdownDate, daysId, hoursId, minutesId, secondsId) {
 
 //Time CountDown
 
-// Testimonial Section Version 01 //
-// Initialize Swiper
+// Support Featue Swiper
 let supportfeature = new Swiper(".support-feature-wrap", {
     spaceBetween: 24,
     speed: 1200,
@@ -78,29 +77,132 @@ let supportfeature = new Swiper(".support-feature-wrap", {
       },
     },
 });
-  // Function to enable or disable Swiper based on viewport width
-  const handleBreakpointChange = (e) => {
-    if (e.matches) {
-      // Viewport is 991px or wider
-      supportfeature.disable();
-    } else {
-      // Viewport is less than 991px
-      supportfeature.enable();
-    }
-  };
-  const mediaQuery = window.matchMedia('(min-width: 1199px)');
-  mediaQuery.addListener(handleBreakpointChange);
-  handleBreakpointChange(mediaQuery);
+// Function to enable or disable Swiper based on viewport width
+const handleBreakpointChange = (e) => {
+  if (e.matches) {
+    // Viewport is 991px or wider
+    supportfeature.disable();
+  } else {
+    // Viewport is less than 991px
+    supportfeature.enable();
+  }
+};
+const mediaQuery = window.matchMedia('(min-width: 1199px)');
+mediaQuery.addListener(handleBreakpointChange);
+handleBreakpointChange(mediaQuery);
+
+// Flash Deals Swiper
+let flashdealswrap = new Swiper(".flash-deals-wrap", {
+  spaceBetween: 24,
+  speed: 1200,
+  loop: true,
+  navigation: {
+    nextEl: ".sup-pre",
+    prevEl: ".sup-next",
+  },
+  breakpoints: {
+    1399: {
+      slidesPerView: 4,
+    },
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+  },
+});
+// Function to enable or disable Swiper based on viewport width
+const handleBreakpointChange2 = (e) => {
+  if (e.matches) {
+    // Viewport is 991px or wider
+    flashdealswrap.disable();
+  } else {
+    // Viewport is less than 991px
+    flashdealswrap.enable();
+  }
+};
+const mediaQuery1 = window.matchMedia('(min-width: 991px)');
+mediaQuery.addListener(handleBreakpointChange2);
+handleBreakpointChange2(mediaQuery1);
+
+// Flash Deals 02 Swiper
+let flashdealswrap02 = new Swiper(".flash-deals-wrap02", {
+  spaceBetween: 24,
+  speed: 1200,
+  loop: true,
+  navigation: {
+    nextEl: ".sup-pre",
+    prevEl: ".sup-next",
+  },
+  breakpoints: {
+    1399: {
+      slidesPerView: 4,
+    },
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+  },
+});
+// Function to enable or disable Swiper based on viewport width
+const handleBreakpointChange02 = (e) => {
+  if (e.matches) {
+    // Viewport is 991px or wider
+    flashdealswrap02.disable();
+  } else {
+    // Viewport is less than 991px
+    flashdealswrap02.enable();
+  }
+};
+const mediaQuery02 = window.matchMedia('(min-width: 991px)');
+mediaQuery.addListener(handleBreakpointChange02);
+handleBreakpointChange02(mediaQuery02);
 
   
-  
+   
+
+
+
+
+
    // Sponsor Slider //
-  const sponsorwrapper = new Swiper(".template-responsive", {
+  const sponsorwrapper = new Swiper(".flash-dealsss-wrap", {
     spaceBetween: 16,
     speed: 1200,
     breakpoints: {
       1399: {
-        slidesPerView: 9,
+        slidesPerView: 4,
       },
       991: {
         slidesPerView: 4,

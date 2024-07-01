@@ -59,6 +59,19 @@
         }
     }
 }
+.cmn-stl{
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--p1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--n0);
+    i{
+        color: var(--p1);
+    }
+}
 // Support Feature
 
 // Flash Deals
@@ -81,6 +94,7 @@
     }
     .flash_header{
         margin-bottom: 40px;
+        gap: 12px;
     }
     .flash-deals-item{
         transition: all 0.4s;
@@ -177,5 +191,8 @@
         justify-content: space-around;
         align-items: center;
     }
+}
+.flash-deals-wrap02{
+    margin-top: 24px;
 }
 // Flash Deals

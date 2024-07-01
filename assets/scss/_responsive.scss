@@ -1,4 +1,62 @@
 // Common Responsive
+@media screen and (max-width: 1199px) {
+    // Flash Deals
+    .flash__deals{
+        .countdown{
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .flash_header{
+            margin-bottom: 24px;
+        }
+        .flash-deals-item{
+            .thumb{
+                .off-badge{
+                    border-radius: 4px;
+                    padding: 3px 6px;
+                    top: 8px;
+                    left: 8px;
+                }
+            }
+            .content{
+                padding: 14px;
+                .deals-name{
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
+                h6{
+                    margin-bottom: 10px;
+                    a{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .ratting{
+                    margin-bottom: 12px;
+                    i{
+                        color: var(--s1);
+                        font-size: 18px;
+                    }
+                }
+                h4{
+                    font-size: 16px;
+                    gap: 6px;
+                    del{
+                        font-size: 14px;
+                    }
+                }
+            }
+            &:hover{
+                .thumb{
+                    img{
+                        transform: scale(1.08);
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
     //Support Feature Res...
     .support-feature-item{
