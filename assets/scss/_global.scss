@@ -44,9 +44,11 @@ li {
 	--s1: #FDAD00;
 	--s2: #FF5252;
 	--n0: #fff;
-	--n500: #404A60;
-	--n100: #798090;
 	--n30: #EBECEF;
+	--n100: #798090;
+	--n300: #5B6477;
+	--n500: #404A60;
+	--n700: #222E48;
     --box: #F5F6F7;
     --border1: #EBECEF;
 }
@@ -65,6 +67,9 @@ li {
 }
 .n500{
 	color: var(--n500);
+}
+.n700{
+	color: var(--n700);
 }
 .n100{
 	color: var(--n100);
@@ -316,9 +321,8 @@ iframe {
 		}
 		&.active{
 			button{
-				background: var(--p1);
-				border-color: var(--p1);
-				color: var(--n0);
+				color: var(--p1);
+				text-decoration: underline;
 			}
 		}
 	}
@@ -337,6 +341,7 @@ iframe {
 				z-index: 1;
 				opacity: 1;
 				transform: translateY(0);
+				text-decoration: underline;
 			}
 		}
 	}

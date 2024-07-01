@@ -3,7 +3,7 @@ $(document).ready(() => {
 
 //Time CountDown
 const countdownDates = [
-    { date: new Date("Jul 4, 2024 15:00:00").getTime(), daysId: 'days1', hoursId: 'hours1', minutesId: 'minutes1', secondsId: 'seconds1' },
+    { date: new Date("Jul 29, 2024 15:00:00").getTime(), daysId: 'days1', hoursId: 'hours1', minutesId: 'minutes1', secondsId: 'seconds1' },
     // { date: new Date("Dec 31, 2024 23:59:59").getTime(), daysId: 'days2', hoursId: 'hours2', minutesId: 'minutes2', secondsId: 'seconds2' },
     // { date: new Date("Jan 1, 2025 00:00:00").getTime(), daysId: 'days3', hoursId: 'hours3', minutesId: 'minutes3', secondsId: 'seconds3' },
     // { date: new Date("Feb 14, 2025 00:00:00").getTime(), daysId: 'days4', hoursId: 'hours4', minutesId: 'minutes4', secondsId: 'seconds4' },
@@ -189,39 +189,94 @@ const mediaQuery02 = window.matchMedia('(min-width: 991px)');
 mediaQuery.addListener(handleBreakpointChange02);
 handleBreakpointChange02(mediaQuery02);
 
-  
-   
-
-
-
-
-
-   // Sponsor Slider //
-  const sponsorwrapper = new Swiper(".flash-dealsss-wrap", {
-    spaceBetween: 16,
-    speed: 1200,
-    breakpoints: {
-      1399: {
-        slidesPerView: 4,
-      },
-      991: {
-        slidesPerView: 4,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      400: {
-        slidesPerView: 2,
-        spaceBetween: 5,
-      },
-      0: {
-        slidesPerView: 2,
-        spaceBetween: 5,
-      },
+// Flash Deals 02 Swiper
+let auctionallitems = new Swiper(".auction-allitems", {
+  spaceBetween: 24,
+  speed: 1200,
+  loop: true,
+  navigation: {
+    nextEl: ".sup-pre",
+    prevEl: ".sup-next",
+  },
+  breakpoints: {
+    1399: {
+      slidesPerView: 4,
     },
-  });
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+  },
+});
+// Function to enable or disable Swiper based on viewport width
+const handleBreakpointChange03 = (e) => {
+  if (e.matches) {
+    // Viewport is 991px or wider
+    auctionallitems.disable();
+  } else {
+    // Viewport is less than 991px
+    auctionallitems.enable();
+  }
+};
+const mediaQuery03 = window.matchMedia('(min-width: 991px)');
+mediaQuery.addListener(handleBreakpointChange03);
+handleBreakpointChange03(mediaQuery03);
+
+// Today Offer Slider //
+const offerwrappers = new Swiper(".offer-wrappers", {
+spaceBetween: 24,
+speed: 1000,
+loop: true,
+// autoplay: {
+//   delay: 1500,
+//   disableOnInteraction: false,
+// },
+pagination: {
+  el: ".swiper-pagination-at",
+},
+breakpoints: {
+  1399: {
+    slidesPerView: 3,
+  },
+  991: {
+    slidesPerView: 3,
+    spaceBetween: 10,
+  },
+  767: {
+    slidesPerView: 2,
+    spaceBetween: 10,
+  },
+  575: {
+    slidesPerView: 1,
+    spaceBetween: 5,
+  },
+  0: {
+    slidesPerView: 2,
+    spaceBetween: 5,
+  },
+},
+});
+
+
+
+
+
   // Customer Slider //
   const customerwrapper = new Swiper(".customer-wrapper", {
     spaceBetween: 0,
@@ -254,6 +309,8 @@ handleBreakpointChange02(mediaQuery02);
       },
     },
   });
+
+  
   // Testimonial Section Version 01 //
    const testimonialwrapv2 = new Swiper(".testimonial-wrapv2", {
     spaceBetween: 0,
@@ -284,6 +341,24 @@ handleBreakpointChange02(mediaQuery02);
         spaceBetween: 5,
       },
     },
+  });
+
+
+
+  // Custom Tabs
+  $(".tablinks .nav-links").each(function () {
+    var targetTab = $(this).closest(".singleTab");
+    targetTab.find(".tablinks .nav-links").each(function() {
+      var navBtn = targetTab.find(".tablinks .nav-links");
+      navBtn.click(function(){
+        navBtn.removeClass('active');
+        $(this).addClass('active');
+        var indexNum = $(this).closest("li").index();
+        var tabcontent = targetTab.find(".tabContents .tabItem");
+        $(tabcontent).removeClass('active');
+        $(tabcontent).eq(indexNum).addClass('active');
+      });
+    });
   });
 
 });

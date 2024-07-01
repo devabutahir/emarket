@@ -76,6 +76,7 @@
 
 // Flash Deals
 .flash__deals{
+    margin-bottom: 60px;
     .countdown{
         display: flex;
         gap: 8px;
@@ -96,78 +97,89 @@
         margin-bottom: 40px;
         gap: 12px;
     }
-    .flash-deals-item{
-        transition: all 0.4s;
-        border-radius: 8px;
-        background: var(--n0);
-        border: 1px solid var(--n30);
-        .thumb{
+}
+.flash-deals-item{
+    transition: all 0.4s;
+    border-radius: 8px;
+    background: var(--n0);
+    border: 1px solid var(--n30);
+    .thumb{
+        overflow: hidden;
+        img{
+            width: 100%;
             overflow: hidden;
-            img{
-                overflow: hidden;
-                transition: all 0.5s;
-            }
-            .off-badge{
-                background: var(--p1);
-                border-radius: 4px;
-                padding: 4px 8px;
-                font-size: 12px;
-                font-weight: 600;
-                color: var(--n0);
-                position: absolute;
-                top: 16px;
-                left: 16px;
-            }
-            .active-badge{
-                
-            }
+            transition: all 0.5s;
         }
-        .content{
-            padding: 24px;
-            .deals-name{
-                font-size: 16px;
-                font-weight: 500;
-                color: var(--p1);
-                display: block;
-                margin-bottom: 10px;
-            }
-            h6{
-                margin-bottom: 14px;
-                a{
-                    font-size: 20px;
-                    font-weight: 500;
-                    color: var(--n500);
-                    line-height: 150%;
-                    display: block;
-                }
-            }
-            .ratting{
-                margin-bottom: 16px;
-                i{
-                    color: var(--s1);
-                    font-size: 26px;
-                }
-            }
-            h4{
+        .off-badge{
+            background: var(--p1);
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--n0);
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+        }
+        .quick-adding{
+            position: absolute;
+            transition: all 0.6s;
+            right: -60px;
+            top: 20px;
+            opacity: 0;
+        }
+    .content{
+        padding: 24px;
+        .deals-name{
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--p1);
+            display: block;
+            margin-bottom: 10px;
+        }
+        h6{
+            margin-bottom: 14px;
+            a{
                 font-size: 20px;
                 font-weight: 500;
                 color: var(--n500);
                 line-height: 150%;
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                del{
-                    font-weight: 400;
-                    color: var(--n100);
-                    font-size: 18px;
-                }
+                display: block;
             }
         }
-        &:hover{
-            .thumb{
-                img{
-                    transform: scale(1.08);
-                }
+        .ratting{
+            margin-bottom: 16px;
+            gap: 3px;
+            i{
+                color: var(--s1);
+                font-size: 22px;
+            }
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--n500);
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            del{
+                font-weight: 400;
+                color: var(--n100);
+                font-size: 18px;
+            }
+        }
+    }
+    &:hover{
+        .quick-adding{
+            top: 20px;
+            right: 20px;
+            opacity: 1;
+        }
+        .thumb{
+            img{
+                transform: scale(1.08);
             }
         }
     }
@@ -195,4 +207,243 @@
 .flash-deals-wrap02{
     margin-top: 24px;
 }
+.quick-adding{
+    display: grid;
+    gap: 8px;
+    .quick-cart{
+        width: 32px;
+        height: 32px;
+        border-radius: 4px; 
+        border: 1px solid var(--n30);
+        background: var(--n0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        i{
+         color: var(--n500);
+         transition: all 0.4s;
+        }
+        &:hover{
+            background: var(--p1);
+            i{
+                color: var(--n0);
+            }
+        }
+     }
+}
 // Flash Deals
+
+// Todays Offers
+.today-offer-body{
+    .tablinks{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px 24px;
+        margin-bottom: 40px;
+        li{
+            button{
+                color: var(--n300);
+                font-weight: 500;
+                font-size: 18px;
+                font-family: "IBM Plex Sans", sans-serif;
+                outline: none;
+            }
+        }
+    }
+    .swiper-pagination-at{
+        margin-top: 20px;
+        text-align: center;
+        .swiper-pagination-bullet{
+            opacity: 0.2;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #3E9172;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            background: var(--p1) !important;
+            opacity: 1;
+        }
+    }
+}
+.today-offers{
+    margin-bottom: 60px;
+}
+.today-offer-thumb{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    h3{
+        font-size: 32px;
+        color: var(--n500);
+        line-height: 120%;
+        left: 10px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-wrap: nowrap;
+        span{
+            color: var(--p1);
+            font-size: 32px;
+            line-height: 120%;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+    }
+    .offer-box{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        background: var(--s1);
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        .box{
+            display: grid;
+            gap: 0;
+            justify-content: center;
+            text-align: center;
+        }
+        span{
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--n700);
+            line-height: 110%;
+            .off{
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+// Todays Offers
+
+// Monthly Offers
+.monthly-offer-item{
+    background: url(../../assets/img/monthly1.png) no-repeat center center;
+    background-size: cover;
+    padding: 24px 0 24px 24px;
+    border-radius: 8px;
+    width: 100%;
+    &.style2{
+        background: url(../../assets/img/monthly2.png) no-repeat center center;
+        background-size: cover;
+    }
+    &.style3{
+        background: url(../../assets/img/monthly3.png) no-repeat center center;
+        background-size: cover; 
+    }
+    .monthly-badge{
+        border-radius: 100px;
+        padding: 10px 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--s2);
+        background: rgba(255, 255, 255, 20%);
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        i{
+            color: var(--s2);
+            font-size: 24px;
+        }
+    }
+    a{
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--n500);
+        display: block;
+        margin-bottom: 20px;
+        span{
+            font-weight: 600;
+            color: var(--n700);
+            display: block;
+            font-size: 24px;
+        }
+    }
+    .form-price{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .forms{
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--n700);
+        }
+        .price{
+          font-size: 20px;
+          font-weight: 500;
+          color: var(--s2);  
+        }
+    }
+}
+.custom-gutter{
+    margin: -12px;
+    .col-sm-6{
+        padding: 12px;
+    }
+}
+.monthly-offer{
+    margin-bottom: 60px; 
+}
+// Monthly Offers
+
+// Auction Product
+.auction__product{
+    margin-bottom: 60px;
+    .auction-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--p1);
+        text-transform: capitalize;
+        i{
+            color: var(--p1);
+            font-size: 20px;
+        }
+        &:hover{
+            color: var(--p1);
+        }
+    }
+    .flash_header{
+        gap: 24px !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .flash-deals-item{
+        border: 1px solid var(--n30);
+        border-radius: 8px;
+        padding: 12px;
+        .bids{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--n700);
+            span{
+                color: var(--p1);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+// Auction Product
