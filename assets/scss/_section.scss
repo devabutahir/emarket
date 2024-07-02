@@ -694,3 +694,177 @@
     }
 }
 // Sponsor Section
+
+// Footer Section
+.footer-copyright{
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: 1px solid var(--border1);
+    p{
+        font-size: 16px;
+        color: var(--n500);
+        font-weight: 400;
+        font-family: "IBM Plex Sans";
+    }
+    .language-area{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        .nice-select{
+            .current{
+                color: var(--n700);
+            }
+            &::after{
+                display: none;
+            }
+            .list{
+                // width: 180px;
+                width: initial;
+                top: initial;
+                right: 0;
+                left: initial;
+                bottom: 30px !important;
+                background: var(--box);
+                li{
+                    color: var(--n500) !important;
+                }
+            }
+        }
+        .box-ones{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            img{
+                width: 17px;
+                height: 17px;
+                object-fit: contain;
+            }
+        }
+        .box-twos{
+            img{
+                width: 22px;
+            }
+        }
+    }
+    &.style-01{
+        .privacy{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            li{
+                a{
+                    color: var(--n500);
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+            }
+        }
+        .paycard{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+}
+.footer-top{
+    margin-bottom: 120px;
+}
+.footer__widget{
+    .widget-head{
+        margin-bottom: 20px;
+        display: block;
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--n500);
+        }
+    }
+    .text-one{
+        margin-bottom: 32px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--n500);
+    }
+    .widget-link{
+        display: grid;
+        gap: 12px;
+        li{
+            a{
+                font-size: 16px;
+                font-weight: 400;
+                color: var(--n500);
+                transition: all 0.4s;
+                &:hover{
+                    margin-left: 4px;
+                    color: var(--p1);
+                }
+            }
+        }
+    }
+    .text-two{
+        margin-bottom: 24px;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--border1);
+        border-radius: 8px;
+        padding: 8px;
+        input{
+            padding: 0;
+            border: unset;
+            padding-right: 5px;
+        }
+        ::placeholder{
+            font-size: 14px;
+        }
+        button{
+            background: var(--p1);
+            border: unset;
+            border-radius: 8px;
+            min-width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                transform: rotate(-14deg);
+                color: var(--n0);
+            }
+        }
+    }
+}
+.social-area{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    li{
+        a{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            border: 1px solid var(--p1);
+            transition: all 0.4s;
+            i{
+                color: var(--p1);
+                font-size: 24px;
+                transition: all 0.4s;
+            }
+            &:hover{
+                background: var(--p1);
+                i{
+                    color: var(--n0);
+                }
+            }
+        }
+    }
+}
+// Footer Section

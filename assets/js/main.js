@@ -11,13 +11,11 @@ const countdownDates = [
     // { date: new Date("Apr 1, 2025 00:00:00").getTime(), daysId: 'days6', hoursId: 'hours6', minutesId: 'minutes6', secondsId: 'seconds6' },
     // { date: new Date("May 5, 2025 00:00:00").getTime(), daysId: 'days7', hoursId: 'hours7', minutesId: 'minutes7', secondsId: 'seconds7' }
 ];
-
 setInterval(() => {
     countdownDates.forEach(({ date, daysId, hoursId, minutesId, secondsId }) => {
         updateCountdown(date, daysId, hoursId, minutesId, secondsId);
     });
 }, 1000);
-
 function updateCountdown(countdownDate, daysId, hoursId, minutesId, secondsId) {
     const now = new Date().getTime();
     const distance = countdownDate - now;
@@ -39,7 +37,6 @@ function updateCountdown(countdownDate, daysId, hoursId, minutesId, secondsId) {
         document.getElementById(secondsId).textContent = "0";
     }
 }
-
 //Time CountDown
 
 // Support Featue Swiper
@@ -354,55 +351,23 @@ const sponsorwrapper = new Swiper(".sponsor-wrapper", {
   },
 });
 
-  
-  // Testimonial Section Version 01 //
-   const testimonialwrapv2 = new Swiper(".testimonial-wrapv2", {
-    spaceBetween: 0,
-    speed: 1200,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-prevteam03",
-      prevEl: ".swiper-button-nextteam03",
-    },
-    breakpoints: {
-      1399: {
-        slidesPerView: 1,
-      },
-      991: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      400: {
-        slidesPerView: 1,
-        spaceBetween: 5,
-      },
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 5,
-      },
-    },
-  });
+//Nice Select
+$('select').niceSelect();
 
-
-
-  // Custom Tabs
-  $(".tablinks .nav-links").each(function () {
-    var targetTab = $(this).closest(".singleTab");
-    targetTab.find(".tablinks .nav-links").each(function() {
-      var navBtn = targetTab.find(".tablinks .nav-links");
-      navBtn.click(function(){
-        navBtn.removeClass('active');
-        $(this).addClass('active');
-        var indexNum = $(this).closest("li").index();
-        var tabcontent = targetTab.find(".tabContents .tabItem");
-        $(tabcontent).removeClass('active');
-        $(tabcontent).eq(indexNum).addClass('active');
-      });
+// Custom Tabs
+$(".tablinks .nav-links").each(function () {
+  var targetTab = $(this).closest(".singleTab");
+  targetTab.find(".tablinks .nav-links").each(function() {
+    var navBtn = targetTab.find(".tablinks .nav-links");
+    navBtn.click(function(){
+      navBtn.removeClass('active');
+      $(this).addClass('active');
+      var indexNum = $(this).closest("li").index();
+      var tabcontent = targetTab.find(".tabContents .tabItem");
+      $(tabcontent).removeClass('active');
+      $(tabcontent).eq(indexNum).addClass('active');
     });
   });
+});
 
 });
