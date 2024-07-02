@@ -148,6 +148,84 @@
            }
         }
     }
+    // Auction Product
+    .auction__product{
+        .flash-deals-item{
+            padding: 0px;
+            .prograss-bars{
+                height: 6px;
+                margin-top: 14px;
+            }
+            .product-offer-time{
+                padding: 14px 6px 14px;
+                display: grid;
+                justify-content: center;
+                top: 10px;
+                gap: 8px;
+                left: 10px;
+                transform: translateX(-0%);
+                i{
+                    color: var(--n700);
+                    font-size: 20px;
+                }
+                .countdown02{
+                    display: grid;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 1px;
+                    span{
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: var(--n700);
+                    }
+                }
+            }
+            .content{
+                padding: 20px 14px 18px;
+            }
+        }
+    }
+    //weekly sale
+    .weekly-sale-section{
+        .weekly-sale-wrap{
+            .camera-element{
+                position: absolute;
+                right: 5px;
+                top: 10px;
+                z-index: 1;
+                animation: lf 2s linear infinite;
+            }
+        }
+    }
+    // Classified Product
+    .classified-wrap{
+        .clssified-item{
+            text-align: center;
+            padding: 28px 10px;
+            position: relative;
+            display: block;
+            width: calc(100% / 5);
+            .thumb{
+                background: rgba(62, 145, 114, 0.05);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 58px;
+                height: 58px;
+                margin: 0 auto 16px;
+                img{
+                    width: 40px;
+                    object-fit: contain;
+                }
+            }
+            .titles{
+                font-size: 16px;
+            }
+            border-right: 1px solid var(--border1);
+            border-bottom: 1px solid var(--border1);
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -186,11 +264,185 @@
             margin-top: 10px;
         }
     }
+    // Auction Product
+    .auction__product{
+        .flash-deals-item{
+            .product-offer-time{
+                padding: 10px 6px 10px;
+                display: grid;
+                justify-content: center;
+                top: 5px;
+                gap: 4px;
+                left: 10px;
+                transform: translateX(-0%);
+                i{
+                    display: none;
+                }
+                .countdown02{
+                    display: grid;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 4px;
+                    span{
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: var(--n700);
+                    }
+                    .f-stri{
+                        display: none;
+                    }
+                }
+            }
+            .content{
+                padding: 20px 14px 18px;
+            }
+        }
+        .auction-wrapper{
+            padding: 10px;
+        }
+    }
+    //Accessories
+    .accessories-section{
+        .accessories-wrapper{
+            padding: 5px;
+        }
+    }
+    .accessories-items{
+        padding: 20px 8px;
+        display: grid;
+        .content{
+            .titles{
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            .items{
+               font-size: 12px;
+            }
+        }
+    }
+    //weekly sale
+    .weekly-sale-section{
+        padding-bottom: 60px;
+        .weekly-sale-wrap{
+            .camera-element{
+               display: none;
+            }
+        }
+    }
+    // Sponsor Section
+    .sponsor-section{
+        padding-bottom: 120px;
+        .sponsor-wrapper-area{
+            background: #F5F6F7;
+            padding: 36px 24px;
+            border-radius: 8px;
+            h5{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    // Classified Product
+    .classified-wrap{
+        .clssified-item{
+            padding: 23px 5px;
+            width: calc(100% / 4);
+            .thumb{
+                margin: 0 auto 12px;
+            }
+            .titles{
+                font-size: 16px;
+            }
+            border-right: 1px solid var(--border1);
+            border-bottom: 1px solid var(--border1);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .auction__product{
+        .auction-wrapper{
+            border: unset;
+            padding: 0;
+        }
+    }
+     // Weekly Sale
+     .weekly-sale-section{
+        .weekly-sale-wrap{
+            display: flex;
+            align-items: center;
+            .offbox{
+                padding: 24px 24px;
+                gap: 10px;
+                h1{
+                    font-size: 38px;
+                    font-weight: 600;
+
+                }
+                .offe{
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: var(--n500);
+                    display: grid;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                }
+            }
+            .this-border{
+                height: 160px;
+            }
+            .weekly-body{
+                border-radius: 8px;
+                padding: 24px 24px;
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 14px;
+                }
+                .best-sale{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+    // Classified Product
+    .classified-wrap{
+        .clssified-item{
+            padding: 23px 5px;
+            width: calc(100% / 3);
+            .thumb{
+                margin: 0 auto 12px;
+            }
+            .titles{
+                font-size: 16px;
+            }
+            border-right: 1px solid var(--border1);
+            border-bottom: 1px solid var(--border1);
+        }
+    }
 }
 
 @media screen and (max-width: 575px) {
     .today-offer-thumb{
         margin-bottom: 20px;
+    }
+    // Classified Product
+    .classified-wrap{
+        .clssified-item{
+            padding: 23px 5px;
+            width: calc(100% / 2);
+            .thumb{
+                margin: 0 auto 12px;
+            }
+            .titles{
+                font-size: 14px;
+            }
+            border-right: 1px solid var(--border1);
+            border-bottom: 1px solid var(--border1);
+        }
     }
 }
 
@@ -232,5 +484,16 @@
             }
         }
     }
+         // Weekly Sale
+         .weekly-sale-section{
+            .weekly-sale-wrap{
+                display: grid;
+                .this-border{
+                    height: 1px;
+                    width: 100%;
+                    border-bottom: 1px dashed var(--n0);
+                }
+            }
+        }
 }
 // Common Responsive
