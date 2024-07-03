@@ -1,3 +1,96 @@
+//Hero Section
+.hero-items{
+    background: url(../../assets/img/hero/hhero1.png) no-repeat center center;
+    background-size: cover;
+    padding: 80px 80px;
+    &.style-02{
+        background: url(../../assets/img/hero/hero2.png) no-repeat center center;
+        background-size: cover;
+    }
+    &.style-03{
+        background: url(../../assets/img/hero/hero3.png) no-repeat center center;
+        background-size: cover;
+    }
+    &.style-04{
+        background: url(../../assets/img/hero/hero4.png) no-repeat center center;
+        background-size: cover;
+    }
+    .hero-content{
+        h3{
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 120%;
+            color: var(--n700);
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 16px;
+            color: var(--n500);
+            margin-bottom: 40px;
+        }
+        .hero-btn{
+            background: var(--p1);
+            border-radius: 100px;
+            padding: 12px 24px;
+            color: var(--n0);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.4s;
+            i{
+                font-size: 20px;
+            }
+            &:hover{
+                background: var(--s1);
+            }
+        }
+        .mega-badge{
+            border-radius: 100px;
+            padding: 10px 22px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--s2);
+            background: rgba(255, 255, 255, 20%);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            i{
+                color: var(--s2);
+                font-size: 24px;
+            }
+        }
+    }
+}
+.hero-slide-btn{
+    width: 94%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    button{
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        background: transparent;
+        border-radius: 50%;
+        transition: all 0.4s;
+        outline: none;
+        &:hover{
+            background: var(--p1);
+            i{
+                color: var(--n0);
+            }
+        }
+    }
+}
+//Hero Section
+
 // Container Maintain 
 .custom-container{
    @media screen and (min-width: 991px) {
@@ -10,6 +103,7 @@
 // Support Feature
 .support__fetaure{
     margin-bottom: 60px;
+    margin-top: 32px;
 }
 .support-feature-item{
     background: var(--box);

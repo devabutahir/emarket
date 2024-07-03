@@ -351,6 +351,39 @@ const sponsorwrapper = new Swiper(".sponsor-wrapper", {
   },
 });
 
+// Sponsor Section Slider //
+const hero_wrapper = new Swiper(".hero-wrapper", {
+  spaceBetween: 0,
+  speed: 1200,
+  loop: true,
+  effect: "fade",
+  navigation: {
+    nextEl: ".hero-pre",
+    prevEl: ".hero-next",
+  },
+  breakpoints: {
+    1399: {
+      slidesPerView: 1,
+    },
+    991: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    400: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+  },
+});
+
 //Nice Select
 $('select').niceSelect();
 

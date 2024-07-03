@@ -506,6 +506,96 @@ iframe {
   color: var(--n50);
 }
 
+.hero-items {
+  background: url(../../assets/img/hero/hhero1.png) no-repeat center center;
+  background-size: cover;
+  padding: 80px 80px;
+}
+.hero-items.style-02 {
+  background: url(../../assets/img/hero/hero2.png) no-repeat center center;
+  background-size: cover;
+}
+.hero-items.style-03 {
+  background: url(../../assets/img/hero/hero3.png) no-repeat center center;
+  background-size: cover;
+}
+.hero-items.style-04 {
+  background: url(../../assets/img/hero/hero4.png) no-repeat center center;
+  background-size: cover;
+}
+.hero-items .hero-content h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--n700);
+  margin-bottom: 24px;
+}
+.hero-items .hero-content p {
+  font-size: 16px;
+  color: var(--n500);
+  margin-bottom: 40px;
+}
+.hero-items .hero-content .hero-btn {
+  background: var(--p1);
+  border-radius: 100px;
+  padding: 12px 24px;
+  color: var(--n0);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.hero-items .hero-content .hero-btn i {
+  font-size: 20px;
+}
+.hero-items .hero-content .hero-btn:hover {
+  background: var(--s1);
+}
+.hero-items .hero-content .mega-badge {
+  border-radius: 100px;
+  padding: 10px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--s2);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.hero-items .hero-content .mega-badge i {
+  color: var(--s2);
+  font-size: 24px;
+}
+
+.hero-slide-btn {
+  width: 94%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-slide-btn button {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border-radius: 50%;
+  transition: all 0.4s;
+  outline: none;
+}
+.hero-slide-btn button:hover {
+  background: var(--p1);
+}
+.hero-slide-btn button:hover i {
+  color: var(--n0);
+}
+
 @media screen and (min-width: 991px) {
   .custom-container {
     max-width: 1326px;
@@ -515,6 +605,7 @@ iframe {
 
 .support__fetaure {
   margin-bottom: 60px;
+  margin-top: 32px;
 }
 
 .support-feature-item {
@@ -1348,6 +1439,35 @@ iframe {
   .flash-deals-wrap02 {
     margin-top: 10px;
   }
+  .hero-items {
+    background: url(../../assets/img/hero/hhero1.png) no-repeat center center;
+    background-size: cover;
+    padding: 80px 80px;
+  }
+  .hero-items .hero-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--n700);
+    margin-bottom: 24px;
+  }
+  .hero-slide-btn {
+    width: 98%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-slide-btn button {
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+  }
+  .hero-slide-btn button:hover i {
+    color: var(--n0);
+  }
 }
 @media screen and (max-width: 1199px) {
   .flash__deals .countdown {
@@ -1689,6 +1809,9 @@ iframe {
   .classified-wrap .clssified-item .titles {
     font-size: 16px;
   }
+  .hero-items .hero-content {
+    max-width: 480px;
+  }
   .footer-copyright.style-01 {
     display: grid;
     justify-content: center;
@@ -1769,6 +1892,38 @@ iframe {
     justify-content: center;
     gap: 16px;
   }
+  .hero-items {
+    background: url(../../assets/img/hero/hhero1.png) no-repeat center center;
+    background-size: cover;
+    padding: 80px 0px;
+  }
+  .hero-items .hero-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--n700);
+    margin-bottom: 24px;
+  }
+  .hero-slide-btn {
+    width: initial;
+    margin: initial;
+    gap: 10px;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 9;
+    top: initial;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-slide-btn button {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+  }
+  .hero-slide-btn button i {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 575px) {
   .today-offer-thumb {
@@ -1846,5 +2001,27 @@ iframe {
     height: 1px;
     width: 100%;
     border-bottom: 1px dashed var(--n0);
+  }
+  .hero-items {
+    padding: 70px 0 110px 0;
+  }
+  .hero-items .hero-content {
+    max-width: 480px;
+  }
+  .hero-items .hero-content .mega-badge {
+    padding: 9px 16px;
+    gap: 1px;
+    font-size: 12px;
+  }
+  .hero-items .hero-content h3 {
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 14px;
+  }
+  .hero-items .hero-content p {
+    margin-bottom: 24px;
+  }
+  .hero-items .hero-content .hero-btn {
+    padding: 7px 24px;
   }
 }/*# sourceMappingURL=main.css.map */
