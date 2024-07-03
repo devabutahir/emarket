@@ -1,0 +1,211 @@
+//Header menu //
+.header__top{
+    padding: 24px 0;
+    .header__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header__top-left{
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            .search-form{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                border: 1px solid var(--n30);
+                background: var(--n10);
+                width: 600px;
+                input{
+                    border: unset;
+                    color: var(--n300);
+                    font-weight: 400;
+                    padding: 10px 16px;
+                    outline: none;
+                }
+                i{
+                    padding-right: 18px;
+                }
+                ::placeholder{
+                    color: var(--n300);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .header__top-account{
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            li{
+                a{
+                    text-align: center;
+                    display: block;
+                    i{
+                        color: var(--n500);
+                        font-size: 22px;
+                    }
+                    .us-name{
+                        color: var(--n500);
+                        font-size: 14px;
+                        display: block;
+                        font-weight: 500;
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        padding: 16px 0;
+        .header__inner{
+            .header__top-left{
+                gap: 30px;
+                .search-form{
+                    width: initial;
+                    input{
+                        border: unset;
+                        padding: 8px 16px;
+                    }
+                }
+            }
+            .header__top-account{
+                gap: 24px;
+                li{
+                    a{
+                        display: block;
+                        i{
+                            font-size: 20px;
+                        }
+                        .us-name{
+                            font-size: 14px;
+                            margin-top: -2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        padding: 16px 0;
+        .header__inner{
+            .header__top-left{
+                gap: 24px;
+                .search-form{
+                    width: initial;
+                    input{
+                        border: unset;
+                        padding: 7px 16px;
+                    }
+                    i{
+                        padding-right: 9px;
+                    }
+                }
+            }
+            .header__top-account{
+                gap: 10px;
+                li{
+                    a{
+                        display: block;
+                        i{
+                            font-size: 20px;
+                        }
+                        .us-name{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        padding: 16px 0;
+        .header__inner{
+            .header__top-left{
+                gap: 24px;
+                .search-form{
+                   display: none;
+                }
+                .top-logo{
+                    width: 90px;
+                    display: block;
+                }
+            }
+            .header__top-account{
+                gap: 10px;
+                li{
+                    a{
+                        display: block;
+                        i{
+                            font-size: 20px;
+                        }
+                        .us-name{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//--
+.main__header-section{
+    border-top: 1px solid var(--border1);
+    .main__header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .hot__deals-market{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            li{
+                a{
+                    i{
+                        color: var(--n500);
+                        font-size: 24px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    color: var(--n500);
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .browsing-history{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            li{
+                .dropdown{
+                    border-right: 1px solid var(--border1);
+                    border-left: 1px solid var(--border1);
+                    padding: 16px 16px;
+                    button{
+                        outline: none;
+                        padding: 0;
+                        i{
+                            font-size: 23px;
+                            color: var(--n500);
+                        }
+                    }
+                    .dropdown-menu{
+                        .dropdown-item{
+                            outline: none;
+                            background: transparent;
+                        }
+                    }
+                }
+                a{
+                    color: var(--n500);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+//Header menu //

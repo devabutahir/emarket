@@ -384,6 +384,20 @@ const hero_wrapper = new Swiper(".hero-wrapper", {
   },
 });
 
+// DropDown Customize
+const dropdownToggle = document.getElementById('dropdownMenuButton');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', function () {
+    dropdownMenu.classList.toggle('show');
+});
+
+window.addEventListener('click', function (e) {
+    if (!dropdownToggle.contains(e.target)) {
+        dropdownMenu.classList.remove('show');
+    }
+});
+
 //Nice Select
 $('select').niceSelect();
 
