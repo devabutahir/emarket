@@ -113,6 +113,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    transition: all 0.5s;
     .content{
         h4{
            font-size: 20px;
@@ -128,6 +129,10 @@
             line-height: 150%;
             display: block;
         }
+    }
+    &:hover{
+        background: var(--n0);
+        transform: translateY(-1px);
     }
 }
 .feature-btn-grp{
@@ -197,6 +202,7 @@
     border-radius: 8px;
     background: var(--n0);
     border: 1px solid var(--n30);
+    overflow: hidden;
     .thumb{
         overflow: hidden;
         img{
@@ -215,14 +221,14 @@
             top: 16px;
             left: 16px;
         }
-        }
-        .quick-adding{
-            position: absolute;
-            transition: all 0.6s;
-            right: -60px;
-            top: 20px;
-            opacity: 0;
-        }
+    }
+    .quick-adding{
+        position: absolute;
+        transition: all 0.6s;
+        right: -60px;
+        top: 20px;
+        opacity: 0;
+    }
     .content{
         padding: 24px;
         .deals-name{
@@ -276,6 +282,7 @@
                 transform: scale(1.08);
             }
         }
+        transform: translateX(-3px);
     }
 }
 .flash_header{
@@ -431,6 +438,7 @@
     padding: 24px 0 24px 24px;
     border-radius: 8px;
     width: 100%;
+    transition: all 0.5s;
     &.style2{
         background: url(../../assets/img/monthly2.png) no-repeat center center;
         background-size: cover;
@@ -482,6 +490,9 @@
           font-weight: 500;
           color: var(--s2);  
         }
+    }
+    &:hover{
+        transform: scale(1.02);
     }
 }
 .custom-gutter{
@@ -613,6 +624,7 @@
     justify-content: center;
     text-align: center;
     position: relative;
+    transition: all 0.5s;
     .off-badge{
         background: var(--p1);
         border-radius: 4px;
@@ -642,6 +654,10 @@
            color: var(--n500);
            font-weight: 400; 
         }
+    }
+    &:hover{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background: var(--n0);
     }
 }
 // Accessories Items
@@ -722,6 +738,11 @@
         }
     }
 }
+@keyframes lf {
+    50%{
+        transform: translateX(-5px);
+    }
+}
 // Weekly Sale
 
 // Classified Product
@@ -736,6 +757,7 @@
         position: relative;
         display: block;
         width: calc(100% / 5);
+        transition: all 0.5s;
         .off-badge{
             background: rgba(62, 145, 114, 0.05);
             border-radius: 4px;
@@ -765,6 +787,9 @@
         }
         border-right: 1px solid var(--border1);
         border-bottom: 1px solid var(--border1);
+        &:hover{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
     }
 }
 // Classified Product

@@ -20,13 +20,15 @@
         <link rel="stylesheet" href="assets/css/line-awesome.min.css">
         <!-- Swiper Slider Css-->
         <link rel="stylesheet" href="assets/css/swiper.min.css">
+        <!-- Wow Animation Css -->
+        <link rel="stylesheet" href="assets/css/animate.css">
         <!-- Nice Select Css -->
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <!-- Main Style.min.css -->
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 
-    <body>
+    <body class="toggleMain-controls">
 
         <!--- Header -->
         <div class="header__top">
@@ -72,8 +74,32 @@
                 </div>
             </div>
         </div>
-        <div class="main__header-section">
+        <div class="header__mobile d-lg-none d-block">
             <div class="container custom-container">
+                <div class="header__mobile-inner">
+                    <div class="logo-adjust d-flex align-items-center">
+                        <button class="sidebar-remove-icon bar-toggles">
+                            <i class="las la-bars"></i>
+                        </button>
+                        <a href="#" class="top-logo">
+                            <img src="assets/img/logo.png" alt="img">
+                        </a>
+                    </div>
+                    <ul class="icon-inner">
+                        <li>
+                            <div class="drop-icon">
+                                <i class="las la-bell"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main__header-section sidebar-wrapper">
+            <div class="container custom-container">
+                <button class="sidebar-remove-icon bar-toggles d-lg-none d-block">
+                    <i class="las la-times"></i>
+                </button>
                 <div class="main__header-wrapper">
                     <ul class="hot__deals-market">
                         <li>
@@ -107,7 +133,29 @@
                             </a>
                         </li>
                     </ul>
-                     <ul class="browsing-history">
+                     <ul class="browsing-history position-relative">
+                        <li class="browse-inner">
+                            <a href="#">Browsing History</a>
+                            <ul>
+                                <li class="titles">
+                                    Browsing History
+                                </li>
+                                <li>
+                                    
+                                </li>
+                                <li>
+                                    No Products
+                                </li>
+                                <li>
+                                    
+                                </li>
+                                <li>
+                                    <a href="#" class="see-alls">
+                                        See All History
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li>
                             <a href="#">
                                 Track Order
@@ -119,7 +167,7 @@
                             </a>
                         </li>
                         <li>
-                            <div class="dropdown">
+                            <div class="dropdown drop-icon">
                                 <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="las la-bell"></i>
                                 </button>
@@ -135,6 +183,10 @@
             </div>
         </div>
         <!--- Header -->
+
+        <!-- Common Overlay -->
+        <div class="cmn-overlay"></div>
+        <!-- Common Overlay -->
         
         <main>
             <!-- Hero Section-->
@@ -151,13 +203,13 @@
                                                     <i class="las la-bolt"></i>
                                                     Mega Sale Madness! Enjoy 50% off
                                                 </span>
-                                                <h3 class="titles">
+                                                <h3 class="titles wow fadeInLeft" data-wow-delay=".4s">
                                                     Shockingly Good Deals on Top Electronics!
                                                 </h3>
-                                                <p>
+                                                <p class="wow fadeInDown">
                                                     New Electronics Deals Added! Explore the latest discounts on cameras, wearables.
                                                 </p>
-                                                <a href="#" class="hero-btn text-capitalize">
+                                                <a href="#" class="hero-btn text-capitalize wow fadeInUp">
                                                     Shop Now
                                                     <i class="las la-arrow-right"></i>
                                                 </a>
@@ -258,7 +310,7 @@
                 <div class="container custom-container">
                     <div class="swiper support-feature-wrap position-relative">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide support-feature-item">
+                            <div class="swiper-slide support-feature-item wow fadeInDown" data-wow-delay=".3s">
                                 <img src="assets/img/free-sevice.png" alt="img">
                                 <div class="content">
                                     <h4>
@@ -269,7 +321,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="swiper-slide support-feature-item">
+                            <div class="swiper-slide support-feature-item wow fadeInDown" data-wow-delay=".4s">
                                 <img src="assets/img/support-man.png" alt="img">
                                 <div class="content">
                                     <h4>
@@ -281,7 +333,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="swiper-slide support-feature-item">
+                            <div class="swiper-slide support-feature-item wow fadeInDown" data-wow-delay=".5s">
                                 <img src="assets/img/return-percel.png" alt="img">
                                 <div class="content">
                                     <h4>
@@ -292,7 +344,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="swiper-slide support-feature-item">
+                            <div class="swiper-slide support-feature-item wow fadeInDown" data-wow-delay=".6s">
                                 <img src="assets/img/payment-cart.png" alt="img">
                                 <div class="content">
                                     <h4>
@@ -304,7 +356,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="swiper-slide support-feature-item">
+                            <div class="swiper-slide support-feature-item wow fadeInDown" data-wow-delay=".7s">
                                 <img src="assets/img/return-percel.png" alt="img">
                                 <div class="content">
                                     <h4>
@@ -315,7 +367,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="swiper-slide support-feature-item">
+                            <div class="swiper-slide support-feature-item wow fadeInDown" data-wow-delay=".8s">
                                 <img src="assets/img/payment-cart.png" alt="img">
                                 <div class="content">
                                     <h4>
@@ -341,10 +393,10 @@
              <section class="flash__deals">
                 <div class="container custom-container">
                     <div class="flash_header d-flex align-items-center justify-content-between flex-wrap gap-4">
-                        <h2>
+                        <h2 class="wow fadeInDown" data-wow-duration="1s">
                             Flash <span>Deals</span>
                         </h2>
-                        <div class="time-countdown">
+                        <div class="time-countdown wow fadeInDown" data-wow-duration="1.2s">
                             <div id="countdown1" class="countdown">
                                 <div class="countdown-item">
                                     <span id="days1"></span>
@@ -367,7 +419,7 @@
                     </div>
                     <div class="swiper flash-deals-wrap position-relative">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".3s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals1.png" alt="img">
@@ -412,7 +464,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".4s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals2.png" alt="img">
@@ -457,7 +509,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".5s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals3.png" alt="img">
@@ -502,7 +554,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".6s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals4.png" alt="img">
@@ -547,7 +599,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".7s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals1.png" alt="img">
@@ -592,7 +644,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".8s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals2.png" alt="img">
@@ -637,7 +689,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".9s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals3.png" alt="img">
@@ -682,7 +734,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay="1s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals4.png" alt="img">
@@ -735,7 +787,7 @@
                     </div>
                     <div class="swiper flash-deals-wrap02 position-relative">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay="1s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals5.png" alt="img">
@@ -780,7 +832,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".9s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals6.png" alt="img">
@@ -825,7 +877,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".8s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals7.png" alt="img">
@@ -870,7 +922,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".7s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals8.png" alt="img">
@@ -915,7 +967,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".6s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals1.png" alt="img">
@@ -960,7 +1012,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".5s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals2.png" alt="img">
@@ -1005,7 +1057,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".4s">
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals3.png" alt="img">
@@ -1050,7 +1102,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">  
+                            <div class="swiper-slide wow fadeInUp" data-wow-delay=".3s">  
                                 <div class="flash-deals-item">
                                     <div class="thumb position-relative">
                                         <img src="assets/img/deals/deals4.png" alt="img">
@@ -1110,7 +1162,7 @@
                 <div class="container custom-container">
                     <div class="row">
                         <div class="col-lg-3 col-md-5 col-sm-5">
-                            <div class="today-offer-thumb">
+                            <div class="today-offer-thumb wow fadeInRight">
                                 <img src="assets/img/deals/today-offer.png" alt="img">
                                 <h3>
                                     Today's <span>Offers</span>
@@ -1154,7 +1206,7 @@
                                         <div class="tabItem active">
                                             <div class="swiper offer-wrappers">
                                                 <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
+                                                    <div class="swiper-slide wow fadeInUp" data-wow-delay=".3s">
                                                         <div class="flash-deals-item">
                                                             <div class="thumb position-relative">
                                                                 <img src="assets/img/deals/details9.png" alt="img">
@@ -1196,7 +1248,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide">
+                                                    <div class="swiper-slide wow fadeInUp" data-wow-delay=".5s">
                                                         <div class="flash-deals-item">
                                                             <div class="thumb position-relative">
                                                                 <img src="assets/img/deals/details10.png" alt="img">
@@ -1238,7 +1290,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide">
+                                                    <div class="swiper-slide wow fadeInUp" data-wow-delay=".7s">
                                                         <div class="flash-deals-item">
                                                             <div class="thumb position-relative">
                                                                 <img src="assets/img/deals/deals7.png" alt="img">
@@ -1283,7 +1335,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide">
+                                                    <div class="swiper-slide wow fadeInUp" data-wow-delay=".9s">
                                                         <div class="flash-deals-item">
                                                             <div class="thumb position-relative">
                                                                 <img src="assets/img/deals/details9.png" alt="img">
@@ -1325,7 +1377,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide">
+                                                    <div class="swiper-slide wow fadeInUp" data-wow-delay="1s">
                                                         <div class="flash-deals-item">
                                                             <div class="thumb position-relative">
                                                                 <img src="assets/img/deals/details10.png" alt="img">
@@ -2041,7 +2093,7 @@
              <section class="monthly-offer">
                 <div class="container custom-container">
                     <div class="row custom-gutter justify-content-center">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInDown" data-wow-delay="as">
                             <div class="monthly-offer-item">
                                 <span class="monthly-badge">
                                     <i class="las la-bolt"></i>
@@ -2063,7 +2115,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInDown" data-wow-delay=".7s">
                             <div class="monthly-offer-item style2">
                                 <span class="monthly-badge">
                                     <i class="las la-tag"></i>
@@ -2085,7 +2137,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-8 col-sm-6">
+                        <div class="col-lg-4 col-md-8 col-sm-6 wow fadeInDown" data-wow-delay=".3s">
                             <div class="monthly-offer-item style3">
                                 <span class="monthly-badge">
                                     <i class="las la-bookmark"></i>
@@ -2116,10 +2168,10 @@
             <section class="auction__product">
                 <div class="container custom-container">
                     <div class="flash_header">
-                        <h2>
+                        <h2 class="wow fadeInRight" data-wow-delay=".3s">
                             Auction <span>products</span>
                         </h2>
-                        <a href="#" class="auction-btn">
+                        <a href="#" class="auction-btn wow fadeInRight" data-wow-delay=".5s">
                             See All Auction
                             <i class="las la-arrow-right"></i>
                         </a>
@@ -2127,7 +2179,7 @@
                     <div class="auction-wrapper">
                         <div class="swiper auction-allitems position-relative">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeInUp" data-wow-delay=".3s">
                                     <div class="flash-deals-item">
                                         <div class="thumb position-relative">
                                             <img src="assets/img/deals/auction1.png" alt="img">
@@ -2186,7 +2238,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeInUp" data-wow-delay=".4s">
                                     <div class="flash-deals-item">
                                         <div class="thumb position-relative">
                                             <img src="assets/img/deals/auction2.png" alt="img">
@@ -2236,7 +2288,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeInUp" data-wow-delay=".5s">
                                     <div class="flash-deals-item">
                                         <div class="thumb position-relative">
                                             <img src="assets/img/deals/auction3.png" alt="img">
@@ -2295,7 +2347,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeInUp" data-wow-delay=".6s">
                                     <div class="flash-deals-item">
                                         <div class="thumb position-relative">
                                             <img src="assets/img/deals/auction4.png" alt="img">
@@ -2354,7 +2406,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeInUp" data-wow-delay=".7s">
                                     <div class="flash-deals-item">
                                         <div class="thumb position-relative">
                                             <img src="assets/img/deals/auction1.png" alt="img">
@@ -2413,7 +2465,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeInUp" data-wow-delay=".9s">
                                     <div class="flash-deals-item">
                                         <div class="thumb position-relative">
                                             <img src="assets/img/deals/auction2.png" alt="img">
@@ -2480,7 +2532,7 @@
                     <div class="accessories-wrapper">
                         <div class="swiper accessories-inner position-relative">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeOut" data-wow-delay=".1s">
                                     <a href="#" class="accessories-items">
                                         <span class="off-badge">
                                             20%
@@ -2496,7 +2548,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeOut" data-wow-delay=".2s">
                                     <a href="#" class="accessories-items">
                                         <img src="assets/img/accessories/headphne.png" alt="img">
                                         <span class="content">
@@ -2509,7 +2561,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeOut" data-wow-delay=".3s">
                                     <a href="#" class="accessories-items">
                                         <span class="off-badge">
                                             20%
@@ -2525,7 +2577,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeOut" data-wow-delay=".4s">
                                     <a href="#" class="accessories-items">
                                         <img src="assets/img/accessories/laptop.png" alt="img">
                                         <span class="content">
@@ -2538,7 +2590,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeOut" data-wow-delay=".5s">
                                     <a href="#" class="accessories-items">
                                         <span class="off-badge">
                                             30%
@@ -2554,7 +2606,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide wow fadeOut" data-wow-delay=".6s">
                                     <a href="#" class="accessories-items">
                                         <img src="assets/img/accessories/toys-game.png" alt="img">
                                         <span class="content">
@@ -2581,7 +2633,7 @@
             <!-- Weekly Sale -->
              <section class="weekly-sale-section">
                 <div class="container custom-container">
-                    <div class="weekly-sale-wrap">
+                    <div class="weekly-sale-wrap wow fadeInUp" data-wow-delay=".3s">
                         <div class="offbox">
                             <h1>
                                 20
@@ -2620,10 +2672,10 @@
              <section class="auction__product classifieds-product">
                 <div class="container custom-container">
                     <div class="flash_header">
-                        <h2>
+                        <h2 class="wow fadeInRight" data-wow-delay=".3s">
                             Classifieds <span>Products</span>
                         </h2>
-                        <a href="#" class="auction-btn">
+                        <a href="#" class="auction-btn wow fadeInRight" data-wow-delay=".4s">
                             See All
                             <i class="las la-arrow-right"></i>
                         </a>
@@ -2802,7 +2854,7 @@
              <section class="sponsor-section">
                 <div class="container custom-container">
                     <div class="sponsor-wrapper-area">
-                        <h5>
+                        <h5 class="wow fadeInDown" data-wow-delay=".3s">
                             TRUSTED BY OVER 12,500 BEST PARTNER
                         </h5>
                         <div class="swiper sponsor-wrapper">
@@ -2875,7 +2927,7 @@
                 <div class="container custom-container">
                     <div class="footer-top">
                         <div class="row">
-                            <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="footer__widget">
                                     <a href="#" class="widget-head">
                                         <img src="assets/img/logo.png" alt="img">
@@ -2907,7 +2959,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
                                 <div class="footer__widget">
                                     <div class="widget-head">
                                         <h5>
@@ -2943,7 +2995,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".7s">
                                 <div class="footer__widget">
                                     <div class="widget-head">
                                         <h5>
@@ -2979,7 +3031,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
                                 <div class="footer__widget">
                                     <div class="widget-head">
                                         <h5>
@@ -3010,7 +3062,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
                                 <div class="footer__widget">
                                     <div class="widget-head">
                                         <h5>
@@ -3046,7 +3098,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
                                 <div class="footer__widget">
                                     <div class="widget-head">
                                         <h5>
@@ -3153,6 +3205,7 @@
         <script src="assets/js/jquery-3.6.0.js"></script>
         <script src="assets/js/swiper.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/jquery.nice-select.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>

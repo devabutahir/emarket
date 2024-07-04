@@ -1,6 +1,31 @@
 $(document).ready(() => {
     "use strict";
 
+//--== Sticky Header ==--//
+$(window).on("scroll", function () {
+  var fixed_top = $(".main__header-section, .header__mobile");
+  if ($(window).scrollTop() > 50) {
+    fixed_top.addClass("header-fixed");
+  }
+  else {
+    fixed_top.removeClass("header-fixed");
+  }
+    // Sticky Header
+    if ($(window).scrollTop() > 50) {
+      fixed_top.addClass("header-fixed");
+    }
+    else {
+      fixed_top.removeClass("header-fixed");
+    }
+  });
+  //--== Odometer Counter ==--//    
+
+//--Global SideBar--
+ $('.toggleMain-controls .bar-toggles, .cmn-overlay').on('click', function () {
+  $('.toggleMain-controls .sidebar-wrapper, .cmn-overlay').toggleClass('active');
+});
+//--Global SideBar--    
+
 //Time CountDown
 const countdownDates = [
     { date: new Date("Jul 29, 2024 15:00:00").getTime(), daysId: 'days1', hoursId: 'hours1', minutesId: 'minutes1', secondsId: 'seconds1' },
@@ -400,6 +425,12 @@ window.addEventListener('click', function (e) {
 
 //Nice Select
 $('select').niceSelect();
+
+//--== wow Animation ==--//
+// wow animation
+new WOW().init();
+// wow animation
+//--== wow Animation ==--//
 
 // Custom Tabs
 $(".tablinks .nav-links").each(function () {
