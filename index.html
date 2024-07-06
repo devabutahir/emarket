@@ -65,11 +65,27 @@
                                 <span class="us-name">Wishlist</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <i class="las la-shopping-cart"></i>
-                                <span class="us-name">Cart</span>
-                            </a>
+                        <li class="cart-areas">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button">
+                                    <i class="las la-shopping-cart"></i>
+                                    <span class="us-name">Cart</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <button type="button" class="dropdown-item titls">
+                                        Shopping Cart
+                                    </button>
+                                    <button type="button" class="dropdown-item">
+                                        Your cart is currently empty.
+                                    </button>
+                                    <button type="button" class="dropdown-item">
+                                       
+                                    </button>
+                                    <button type="button" class="dropdown-item">
+                                        
+                                    </button>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -88,9 +104,21 @@
                     </div>
                     <ul class="icon-inner">
                         <li>
-                            <div class="drop-icon">
-                                <i class="las la-bell"></i>
+                            <div class="dropdown drop-icon">
+                                <button class="dropdown-toggle" type="button">
+                                    <i class="las la-bell"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                  <div class="dropdown-item text-center">Empty</div>
+                                  <div class="dropdown-item"></div>
+                                  <div class="dropdown-item"></div>
+                                </div>
                             </div>
+                        </li>
+                        <li class="drop-icon">
+                            <a href="#">
+                                <i class="las la-border-all"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -102,38 +130,135 @@
                     <i class="las la-times"></i>
                 </button>
                 <div class="main__header-wrapper">
-                    <ul class="hot__deals-market">
-                        <li>
-                            <a href="#">
-                                <i class="las la-fire-alt"></i>
-                                Hot Deals
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="las la-meteor"></i>
-                                What’s New
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="las la-tag"></i>
-                                Daily Deals
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="las la-crown"></i>
-                                Best Sellers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="las la-percent"></i>
-                                Clearance
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="adjust-categorys">
+                        <div class="category-wrapper d-lg-block d-none">
+                            <div class="feedback__content">
+                                <button type="button" class="category-btn">
+                                    Categorys
+                                   <i class="las la-angle-down"></i>
+                                </button>
+                             </div>
+                             <div class="category-content">
+                                 <ul class="cate-inner">
+                                    <li>
+                                        <img src="assets/img/accessories/wman.jpg" alt="img">
+                                        Women's clothing and fashion
+                                        <ul class="category-items">
+                                            <li>
+                                               <ul>
+                                                    <li class="cta-ttile">Hot Categories</li>
+                                                    <li><a href="#">Party Dress</a></li>
+                                                    <li><a href="#">Beauty & Helth</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                    <li><a href="#">Skirts</a></li>
+                                                    <li><a href="#">Watch</a></li>
+                                                    <li><a href="#">Gloves</a></li>
+                                               </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                     <li class="cta-ttile">Hot Categories</li>
+                                                     <li><a href="#">Party Dress</a></li>
+                                                     <li><a href="#">Beauty & Helth</a></li>
+                                                     <li><a href="#">Jeans</a></li>
+                                                     <li><a href="#">Skirts</a></li>
+                                                     <li><a href="#">Watch</a></li>
+                                                     <li><a href="#">Gloves</a></li>
+                                                </ul>
+                                             </li>
+                                             <li>
+                                                <ul>
+                                                     <li class="cta-ttile">Hot Categories</li>
+                                                     <li><a href="#">Party Dress</a></li>
+                                                     <li><a href="#">Beauty & Helth</a></li>
+                                                     <li><a href="#">Jeans</a></li>
+                                                     <li><a href="#">Skirts</a></li>
+                                                     <li><a href="#">Watch</a></li>
+                                                     <li><a href="#">Gloves</a></li>
+                                                </ul>
+                                             </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/menswear.jpg" alt="img">
+                                        Menswear and Fashion
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/computer.jpg" alt="img">
+                                        Computer and Accessories 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/cars.jpg" alt="img">
+                                        Cars and motrcycles 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/children.jpg" alt="img">
+                                        Children and toys 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/sports.jpg" alt="img">
+                                        Sports and outdoor activites 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/jewelry.jpg" alt="img">
+                                        Jewelry & Qatches 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/phons.jpg" alt="img">
+                                        Cell Phones and Wathch 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/beauty.jpg" alt="img">
+                                        Beauty helth & hair 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/toolshome.jpg" alt="img">
+                                        Home and tools 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/decoration.jpg" alt="img">
+                                        Decoration & Application 
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/accessories/toyss.jpg" alt="img">
+                                        Toys 
+                                    </li>
+                                 </ul>
+                             </div>
+                        </div>
+                        <ul class="hot__deals-market">
+                            <li>
+                                <a href="#">
+                                    <i class="las la-fire-alt"></i>
+                                    Hot Deals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-meteor"></i>
+                                    What’s New
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-tag"></i>
+                                    Daily Deals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-crown"></i>
+                                    Best Sellers
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">
+                                    <i class="las la-percent"></i>
+                                    Clearance
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
                      <ul class="browsing-history position-relative">
                         <li class="browse-inner">
                             <a href="#">Browsing History</a>
@@ -169,10 +294,10 @@
                         </li>
                         <li>
                             <div class="dropdown drop-icon">
-                                <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="dropdown-toggle" type="button">
                                     <i class="las la-bell"></i>
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu dropdown-menu-right">
                                   <div class="dropdown-item text-center">Empty</div>
                                   <div class="dropdown-item"></div>
                                   <div class="dropdown-item"></div>

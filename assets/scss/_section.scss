@@ -987,3 +987,94 @@
     }
 }
 // Footer Section
+
+// Category Style
+.category-wrapper{
+    position: relative;
+    .feedback__content{
+        button{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            outline: none;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--n700);
+            i{
+                font-size: 14px;
+            }
+        }
+    }
+    .category-content {
+        display: none;
+        // z-index: 9;
+        // position: absolute;
+        // left: 0;
+        top: 100%;
+        background: var(--n0);
+        width: 290px;
+        height: 75vh;
+        // height: 100%;
+        padding-top: 10px;
+        border: 1px solid var(--border1);
+        overflow-y: scroll;
+        overflow-x: visible;
+        .cate-inner > li{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 14px;
+            color: var(--n500);
+            font-weight: 500;
+            padding: 12px 12px;
+            transition: all 0.5s;
+            img{
+                width: 18px;
+            }
+            &:not(:last-child){
+                border-bottom: 1px solid var(--border1);
+            }
+            &:hover{
+                cursor: pointer;
+                background: var(--border1);
+                .category-items{
+                    opacity: 1;
+                    transition: all 0.4s;
+                    transform: translateY(0px);
+                }
+            }
+            .category-items{
+                display: flex;
+                // flex-wrap: wrap;
+                gap: 24px;
+                position: absolute;
+                left: 100%;
+                top: 14px;
+                z-index: 99;
+                width: 1000px;
+                opacity: 0;
+                transform: translateY(20px);
+                li{
+                    width: 30%;
+                    ul{
+                        display: grid;
+                        gap: 8px;
+                        .cta-ttile{
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: var(--n700);
+                        }
+                        li{
+                            a{
+                                font-size: 14px;
+                                color: var(--n500);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Category Style

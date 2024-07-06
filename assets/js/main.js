@@ -410,18 +410,31 @@ const hero_wrapper = new Swiper(".hero-wrapper", {
 });
 
 // DropDown Customize
-const dropdownToggle = document.getElementById('dropdownMenuButton');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-
-dropdownToggle.addEventListener('click', function () {
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const dropdownMenu = this.nextElementSibling;
     dropdownMenu.classList.toggle('show');
+    
+    document.addEventListener('click', function closeDropdown(event) {
+      if (!toggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.remove('show');
+        document.removeEventListener('click', closeDropdown);
+      }
+    });
+  });
 });
 
-window.addEventListener('click', function (e) {
-    if (!dropdownToggle.contains(e.target)) {
-        dropdownMenu.classList.remove('show');
-    }
+//CateGory Toggle
+//--== Custom Comment / Review Reply Box ==--//
+$(".category-btn").on("click", function () {
+  $(this).toggleClass("reply-active");
+  $(this).parent().next(".category-content").slideToggle();
 });
+//--== Custom Comment / Review Reply Box ==--//
+
+
 
 //Nice Select
 $('select').niceSelect();
