@@ -69,7 +69,6 @@ let supportfeature = new Swiper(".support-feature-wrap", {
     spaceBetween: 24,
     speed: 1200,
     loop: true,
-    allowTouchMove: true,
     navigation: {
       nextEl: ".sup-pre",
       prevEl: ".sup-next",
