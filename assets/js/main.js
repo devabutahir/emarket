@@ -69,6 +69,7 @@ let supportfeature = new Swiper(".support-feature-wrap", {
     spaceBetween: 24,
     speed: 1200,
     loop: true,
+    allowTouchMove: true,
     navigation: {
       nextEl: ".sup-pre",
       prevEl: ".sup-next",
@@ -376,7 +377,7 @@ const sponsorwrapper = new Swiper(".sponsor-wrapper", {
   },
 });
 
-// Sponsor Section Slider //
+// Hero Banner Slider //
 const hero_wrapper = new Swiper(".hero-wrapper", {
   spaceBetween: 0,
   speed: 1200,
