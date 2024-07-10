@@ -109,6 +109,37 @@
             }
         }
     }
+    .all-deals-mobiles{
+        padding-top: 10px;
+        .hot__deals-market{
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            align-items: center;
+            li{
+                a{
+                    transition: all 0.4s;
+                    i{
+                        color: var(--n500);
+                        font-size: 18px;
+                        transition: all 0.4s;
+                    }
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    color: var(--n500);
+                    font-size: 12px;
+                    font-weight: 500;
+                    &:hover{
+                        color: var(--p1);
+                        i{
+                            color: var(--p1);
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media screen and (max-width: 1199px) {
         padding: 16px 0;
         .header__inner{
@@ -140,8 +171,18 @@
         }
     }
     @media screen  and (max-width: 991px) {
+        border-top: 1px solid var(--border1);
+        padding: 12px 0;
         .header__inner{
+            display: inline;
             .header__top-left{
+                .search-form{
+                    width: 100% !important;
+                    border-radius: 4px;
+                    input{
+                        width: 100%;
+                    }
+                }
                 .top-logo{
                     display: none;
                 }
@@ -149,7 +190,7 @@
         }
     }
     @media screen and (max-width: 767px) {
-        padding: 16px 0;
+        padding: 10px 0;
         .header__inner{
             .header__top-left{
                 gap: 24px;
@@ -184,7 +225,7 @@
         }
     }
     @media screen and (max-width: 575px) {
-        padding: 16px 0;
+        padding: 10px 0;
         .header__inner{
             .header__top-left{
                 gap: 24px;
@@ -208,6 +249,87 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .all-deals-mobiles{
+            padding-top: 10px;
+            overflow-x: scroll;
+            .hot__deals-market{
+                min-width: 450px;
+                display: flex;
+                gap: 14px;
+                align-items: center;
+                li{
+                    a{
+                        transition: all 0.4s;
+                        i{
+                            color: var(--n500);
+                            font-size: 18px;
+                            transition: all 0.4s;
+                        }
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+                        color: var(--n500);
+                        font-size: 12px;
+                        font-weight: 500;
+                        &:hover{
+                            color: var(--p1);
+                            i{
+                                color: var(--p1);
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        .all-deals-mobiles::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+        }
+    }
+}
+.cart-areas{
+    button{
+        display: grid;
+        outline: none;
+        text-align: center;
+        display: block;
+        transition: all 0.4s;
+        i{
+            color: var(--n500);
+            font-size: 22px;
+            transition: all 0.4s;
+        }
+        .us-name{
+            color: var(--n500);
+            font-size: 14px;
+            display: block;
+            font-weight: 500;
+            margin-top: -2px;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .dropdown-menu{
+        .titls{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .dropdown-item{
+            font-size: 13px;
+            &:hover{
+                background: transparent;
+            }
+            &:focus{
+                background: transparent;
+            }
+            &.active{
+                background: red;
             }
         }
     }
@@ -423,6 +545,7 @@
         transition: all 1s;
         background: var(--n0);
         overflow-y: scroll;
+        padding-top: 20px;
         .sidebar-remove-icon{
             position: absolute;
             right: -0px;
@@ -526,3 +649,166 @@
     }
 }
 //Header Common Overlay //
+
+//Fixed Menu //
+.fixed-mobile-menu{
+    display: none;
+   @media screen and (max-width: 991px) {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background: var(--n0);
+    padding: 10px 10px;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 9;
+    .header__top-account{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        li{
+            a{
+                text-align: center;
+                display: block;
+                transition: all 0.4s;
+                i{
+                    color: var(--n500);
+                    font-size: 22px;
+                    transition: all 0.4s;
+                }
+                .us-name{
+                    color: var(--n500);
+                    font-size: 14px;
+                    display: block;
+                    font-weight: 500;
+                    margin-top: -2px;
+                }
+                &:hover{
+                    transform: scale(1.02);
+                    i,
+                    .us-name{
+                        color: var(--p1);
+                    }
+                }
+            }
+        }
+        .cart-areas{
+            button{
+                display: grid;
+                outline: none;
+                text-align: center;
+                display: block;
+                transition: all 0.4s;
+                i{
+                    color: var(--n500);
+                    font-size: 22px;
+                    transition: all 0.4s;
+                }
+                .us-name{
+                    color: var(--n500);
+                    font-size: 14px;
+                    display: block;
+                    font-weight: 500;
+                    margin-top: -2px;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+            .dropdown-menu{
+                .titls{
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                .dropdown-item{
+                    font-size: 13px;
+                    &:hover{
+                        background: transparent;
+                    }
+                    &:focus{
+                        background: transparent;
+                    }
+                    &.active{
+                        background: red;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .header__top-account{
+            gap: 20px;
+            li{
+                a{
+                    i{
+                        color: var(--n500);
+                        font-size: 18px;
+                        transition: all 0.4s;
+                    }
+                    .us-name{
+                        color: var(--n500);
+                        font-size: 12px;
+                        display: block;
+                        font-weight: 500;
+                        margin-top: -2px;
+                    }
+                    &:hover{
+                        transform: scale(1.02);
+                        i,
+                        .us-name{
+                            color: var(--p1);
+                        }
+                    }
+                }
+            }
+            .cart-areas{
+                button{
+                    display: grid;
+                    outline: none;
+                    text-align: center;
+                    display: block;
+                    transition: all 0.4s;
+                    i{
+                        color: var(--n500);
+                        font-size: 22px;
+                        transition: all 0.4s;
+                    }
+                    .us-name{
+                        color: var(--n500);
+                        font-size: 14px;
+                        display: block;
+                        font-weight: 500;
+                        margin-top: -2px;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                }
+                .dropdown-menu{
+                    .titls{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+                    .dropdown-item{
+                        font-size: 13px;
+                        &:hover{
+                            background: transparent;
+                        }
+                        &:focus{
+                            background: transparent;
+                        }
+                        &.active{
+                            background: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   }
+}
+//Fixed Menu //

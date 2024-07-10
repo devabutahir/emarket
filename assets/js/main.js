@@ -314,12 +314,9 @@ const offerwrappers = new Swiper(".offer-wrappers", {
 spaceBetween: 24,
 speed: 1000,
 loop: true,
-// autoplay: {
-//   delay: 1500,
-//   disableOnInteraction: false,
-// },
 pagination: {
   el: ".swiper-pagination-at",
+  clickable: true,
 },
 breakpoints: {
   1399: {
@@ -427,12 +424,17 @@ dropdownToggles.forEach(toggle => {
 });
 
 //CateGory Toggle
-//--== Custom Comment / Review Reply Box ==--//
+//--== Custom Gategory ==--//
 $(".category-btn").on("click", function () {
   $(this).toggleClass("reply-active");
   $(this).parent().next(".category-content").slideToggle();
 });
-//--== Custom Comment / Review Reply Box ==--//
+//--Mobile Device CateGory
+$(".category-mobile-btn").on("click", function () {
+  $(this).toggleClass("reply-active");
+  $(this).parent().next(".mobile-category-list").slideToggle();
+});
+//--== Custom Gategory ==--//
 
 
 

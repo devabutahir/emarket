@@ -811,10 +811,18 @@
             margin-bottom: 40px;
         }
     }
+    @media screen and (max-width: 1399px) {
+        padding-bottom: 60px !important;
+    }
 }
 // Sponsor Section
 
 // Footer Section
+.footer-section{
+    @media screen and (max-width: 991px) {
+        padding-bottom: 70px;
+    }
+}
 .footer-copyright{
     padding: 28px 0;
     display: flex;
@@ -1095,3 +1103,64 @@
 }
 
 // Category Style
+
+// Category Mobile Style
+.mobile-device-category-wrapper{
+    .category-mobile-items{
+        h5{
+            color: var(--n500);
+        }
+        .mobile-user{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 20px;
+            i{
+                width: 40px;
+                height: 40px;
+                border: 1px solid var(--border1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--n500);
+                font-size: 18px;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 600;
+                color: var(--n500);
+            }
+        }
+        .category-icon-area{
+            button{
+                outline: none;
+                font-size: 17px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+        .mobile-category-list{
+            display: none;
+            .all-listing{
+                padding-top: 5px;
+                .cta-ttile{
+                    color: var(--n500);
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                li{
+                    a{
+                        color: var(--n500);
+                        transition: all 0.4s;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+// Category Mobile Style

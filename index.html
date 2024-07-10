@@ -32,106 +32,413 @@
     <body class="toggleMain-controls">
 
         <!--- Header -->
-        <div class="header__top">
-            <div class="container custom-container">
-                <div class="header__inner">
-                    <div class="header__top-left">
-                        <a href="index.html" class="top-logo">
-                            <img src="assets/img/logo.png" alt="img">
-                        </a>
-                        <form action="#" class="search-form">
-                            <input type="text" placeholder="Search products">
-                            <button>
-                                <i class="las la-search"></i>
+        <div class="header-adjustment-control d-flex flex-column">
+            <div class="header__top order-1 order-lg-0">
+                <div class="container custom-container">
+                    <div class="header__inner">
+                        <div class="header__top-left">
+                            <a href="index.html" class="top-logo">
+                                <img src="assets/img/logo.png" alt="img">
+                            </a>
+                            <form action="#" class="search-form">
+                                <input type="text" placeholder="Search products">
+                                <button>
+                                    <i class="las la-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <ul class="header__top-account d-lg-flex d-none">
+                            <li>
+                                <a href="#">
+                                    <i class="las la-user"></i>
+                                    <span class="us-name">Account</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-exchange-alt"></i>
+                                    <span class="us-name">Compare</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="lar la-heart"></i>
+                                    <span class="us-name">Wishlist</span>
+                                </a>
+                            </li>
+                            <li class="cart-areas">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button">
+                                        <i class="las la-shopping-cart"></i>
+                                        <span class="us-name">Cart</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button type="button" class="dropdown-item titls">
+                                            Shopping Cart
+                                        </button>
+                                        <button type="button" class="dropdown-item">
+                                            Your cart is currently empty.
+                                        </button>
+                                        <button type="button" class="dropdown-item">
+                                           
+                                        </button>
+                                        <button type="button" class="dropdown-item">
+                                            
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container custom-container">
+                    <div class="all-deals-mobiles d-lg-none d-block">
+                        <ul class="hot__deals-market">
+                            <li>
+                                <a href="#">
+                                    Daily Deals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-fire-alt"></i>
+                                    Hot Deals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-meteor"></i>
+                                    What’s New
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-tag"></i>
+                                    Daily Deals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-crown"></i>
+                                    Best Sellers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile d-lg-none d-block">
+                <div class="container custom-container">
+                    <div class="header__mobile-inner">
+                        <div class="logo-adjust d-flex align-items-center">
+                            <button class="sidebar-remove-icon bar-toggles">
+                                <i class="las la-bars"></i>
                             </button>
-                        </form>
-                    </div>
-                    <ul class="header__top-account">
-                        <li>
-                            <a href="#">
-                                <i class="las la-user"></i>
-                                <span class="us-name">Account</span>
+                            <a href="index.html" class="top-logo">
+                                <img src="assets/img/logo.png" alt="img">
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="las la-exchange-alt"></i>
-                                <span class="us-name">Compare</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="lar la-heart"></i>
-                                <span class="us-name">Wishlist</span>
-                            </a>
-                        </li>
-                        <li class="cart-areas">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button">
-                                    <i class="las la-shopping-cart"></i>
-                                    <span class="us-name">Cart</span>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <button type="button" class="dropdown-item titls">
-                                        Shopping Cart
+                        </div>
+                        <ul class="icon-inner">
+                            <li class="cart-areas drop-icon">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button">
+                                        <i class="las la-shopping-cart"></i>
                                     </button>
-                                    <button type="button" class="dropdown-item">
-                                        Your cart is currently empty.
-                                    </button>
-                                    <button type="button" class="dropdown-item">
-                                       
-                                    </button>
-                                    <button type="button" class="dropdown-item">
-                                        
-                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button type="button" class="dropdown-item titls">
+                                            Shopping Cart
+                                        </button>
+                                        <button type="button" class="dropdown-item">
+                                            Your cart is currently empty.
+                                        </button>
+                                        <button type="button" class="dropdown-item">
+                                           
+                                        </button>
+                                        <button type="button" class="dropdown-item">
+                                            
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="header__mobile d-lg-none d-block">
-            <div class="container custom-container">
-                <div class="header__mobile-inner">
-                    <div class="logo-adjust d-flex align-items-center">
-                        <button class="sidebar-remove-icon bar-toggles">
-                            <i class="las la-bars"></i>
-                        </button>
-                        <a href="index.html" class="top-logo">
-                            <img src="assets/img/logo.png" alt="img">
-                        </a>
-                    </div>
-                    <ul class="icon-inner">
-                        <li>
-                            <div class="dropdown drop-icon">
-                                <button class="dropdown-toggle" type="button">
-                                    <i class="las la-bell"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                  <div class="dropdown-item text-center">Empty</div>
-                                  <div class="dropdown-item"></div>
-                                  <div class="dropdown-item"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="drop-icon">
-                            <a href="#">
-                                <i class="las la-border-all"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
         <div class="main__header-section sidebar-wrapper">
             <div class="container custom-container">
                 <button class="sidebar-remove-icon bar-toggles d-lg-none d-block">
                     <i class="las la-times"></i>
                 </button>
-                <div class="main__header-wrapper">
+                <div class="mobile-device-category-wrapper d-lg-none d-block">
+                    <div class="category-mobile-items">
+                        <a href="#" class="mobile-user">
+                            <i class="las la-user"></i>
+                            <span>Account</span>
+                        </a>
+                    </div>
+                    <div class="category-mobile-items">
+                        <h5 class="mb-3">
+                            Shop by Category
+                        </h5>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Women's clothing and fashion <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Menswear and Fashon <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Computer and Accessories <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Cars and motrcycles <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Children and toys <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Jewelry & Qatches <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Cell Phones <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Home and Tools <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Decoration & Application <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Menswear and Fashon <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Computer and Accessories <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Cars and motrcycles <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Toys <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-mobile-items mb-3">
+                        <div class="category-icon-area">
+                            <button type="button" class="category-mobile-btn">
+                                Art & Fashion <i class="las la-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="mobile-category-list">
+                            <ul class="all-listing d-grid gap-2">
+                                <li class="cta-ttile">Smart Watch</li>
+                                <li><a href="#">Party Dress</a></li>
+                                <li><a href="#">Beauty & Helth</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Gloves</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__header-wrapper d-lg-flex d-none">
                     <div class="adjust-categorys">
-                        <div class="category-wrapper d-lg-block d-none">
+                        <div class="category-wrapper">
                             <div class="feedback__content">
                                 <button type="button" class="category-btn">
                                     Categorys
@@ -1800,7 +2107,7 @@
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                     </div>
                                                     <div class="swiper-slide wow fadeInUp" data-wow-delay=".7s">
                                                         <div class="flash-deals-item">
                                                             <div class="thumb position-relative">
@@ -1931,6 +2238,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="swiper-pagination-at"></div>
                                             </div>
                                         </div>
                                         <div class="tabItem">
@@ -2150,6 +2458,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="swiper-pagination-at"></div>
                                             </div>
                                         </div>
                                         <div class="tabItem">
@@ -2369,6 +2678,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="swiper-pagination-at"></div>
                                             </div>
                                         </div>
                                         <div class="tabItem">
@@ -2588,9 +2898,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="swiper-pagination-at"></div>
                                             </div>
                                         </div>
-                                        <div class="swiper-pagination-at"></div>
                                     </div>
                                 </div>
                             </div>
@@ -3431,7 +3741,7 @@
              </section>
             <!-- Sponsor Section -->
 
-            </main>
+        </main>
             
             <!-- Footer Section -->
              <footer class="footer-section">
@@ -3711,6 +4021,59 @@
                 </div>
              </footer>
             <!-- Footer Section -->
+
+            <!-- Fixed Mobile-menu Section -->
+            <div class="fixed-mobile-menu">
+                <ul class="header__top-account">
+                    <li>
+                        <a href="#">
+                            <i class="las la-home"></i>
+                            <span class="us-name">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="las la-exchange-alt"></i>
+                            <span class="us-name">Compare</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="lar la-heart"></i>
+                            <span class="us-name">Wishlist</span>
+                        </a>
+                    </li>
+                    <li class="cart-areas">
+                        <div class="dropdown position-relative">
+                            <button class="dropdown-toggle" type="button">
+                                <i class="las la-shopping-cart"></i>
+                                <span class="us-name">Cart</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button type="button" class="dropdown-item titls">
+                                    Shopping Cart
+                                </button>
+                                <button type="button" class="dropdown-item">
+                                    Your cart is currently empty.
+                                </button>
+                                <button type="button" class="dropdown-item">
+                                   
+                                </button>
+                                <button type="button" class="dropdown-item">
+                                    
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="las la-user"></i>
+                            <span class="us-name">Account</span>
+                        </a>
+                    </li>
+                </ul>
+             </div>
+            <!-- Fixed Mobile-menu Section -->
 
 
         <script src="assets/js/jquery-3.6.0.js"></script>
