@@ -444,34 +444,32 @@ $('.toggleMain-controls .cart-adding-togggle').on('click', function () {
   $('.toggleMain-controls .cart-adding-wrapper').toggleClass('active');
 });
 
-  // Input Increase
-  var minVal = 1, maxVal = 20;
-  $(".increaseQty").on('click', function(){
-    var $parentElm = $(this).parents(".qtySelector");
-    $(this).addClass("clicked");
-    setTimeout(function(){
-        $(".clicked").removeClass("clicked");
-    },100);
-    var value = $parentElm.find(".qtyValue").val();
-    if (value < maxVal) {
-        value++;
-    }
-    $parentElm.find(".qtyValue").val(value);
-  });
-  $(".decreaseQty").on('click', function(){
-    var $parentElm = $(this).parents(".qtySelector");
-    $(this).addClass("clicked");
-    setTimeout(function(){
-        $(".clicked").removeClass("clicked");
-    },100);
-    var value = $parentElm.find(".qtyValue").val();
-    if (value > 1) {
-        value--;
-    }
-    $parentElm.find(".qtyValue").val(value);
-  });
-
-
+// Input Increase
+var minVal = 1, maxVal = 20;
+$(".increaseQty").on('click', function(){
+  var $parentElm = $(this).parents(".qtySelector");
+  $(this).addClass("clicked");
+  setTimeout(function(){
+      $(".clicked").removeClass("clicked");
+  },100);
+  var value = $parentElm.find(".qtyValue").val();
+  if (value < maxVal) {
+      value++;
+  }
+  $parentElm.find(".qtyValue").val(value);
+});
+$(".decreaseQty").on('click', function(){
+  var $parentElm = $(this).parents(".qtySelector");
+  $(this).addClass("clicked");
+  setTimeout(function(){
+      $(".clicked").removeClass("clicked");
+  },100);
+  var value = $parentElm.find(".qtyValue").val();
+  if (value > 1) {
+      value--;
+  }
+  $parentElm.find(".qtyValue").val(value);
+});
 
 //Nice Select
 $('select').niceSelect();

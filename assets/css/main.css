@@ -1384,16 +1384,16 @@ iframe {
   transition: all 0.5s;
 }
 .support-feature-item .content h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--n500);
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   line-height: 150%;
 }
 .support-feature-item .content span {
   color: var(--n500);
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 13px;
+  line-height: 145%;
   display: block;
 }
 .support-feature-item:hover {
@@ -1501,17 +1501,17 @@ iframe {
   padding: 24px;
 }
 .flash-deals-item .content .deals-name {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--p1);
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .flash-deals-item .content h6 {
   margin-bottom: 14px;
 }
 .flash-deals-item .content h6 a {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--n500);
   line-height: 150%;
@@ -1523,10 +1523,10 @@ iframe {
 }
 .flash-deals-item .content .ratting i {
   color: var(--s1);
-  font-size: 22px;
+  font-size: 19px;
 }
 .flash-deals-item .content h4 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--n500);
   line-height: 150%;
@@ -1537,7 +1537,7 @@ iframe {
 .flash-deals-item .content h4 del {
   font-weight: 400;
   color: var(--n100);
-  font-size: 18px;
+  font-size: 16px;
 }
 .flash-deals-item:hover {
   transform: translateX(-3px);
@@ -1553,7 +1553,7 @@ iframe {
 
 .flash_header span,
 .flash_header h2 {
-  font-size: 40px;
+  font-size: 34px;
   color: var(--n500);
   line-height: 120%;
   font-weight: 600;
@@ -1562,6 +1562,20 @@ iframe {
 .flash_header span span,
 .flash_header h2 span {
   color: var(--p1);
+}
+@media screen and (max-width: 1199px) {
+  .flash_header span,
+  .flash_header h2 {
+    font-size: 26px;
+    color: var(--n500);
+    line-height: 120%;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .flash_header span span,
+  .flash_header h2 span {
+    color: var(--p1);
+  }
 }
 
 .time-countdown .countdown {
@@ -1725,7 +1739,7 @@ iframe {
   font-size: 24px;
 }
 .monthly-offer-item a {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--n500);
   display: block;
@@ -1735,7 +1749,7 @@ iframe {
   font-weight: 600;
   color: var(--n700);
   display: block;
-  font-size: 24px;
+  font-size: 20px;
 }
 .monthly-offer-item .form-price {
   display: flex;
@@ -1748,7 +1762,7 @@ iframe {
   color: var(--n700);
 }
 .monthly-offer-item .form-price .price {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--s2);
 }
@@ -1901,7 +1915,7 @@ iframe {
   margin-bottom: 8px;
 }
 .accessories-items .content .titles {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 150%;
   color: var(--n700);
@@ -1960,7 +1974,7 @@ iframe {
   width: 100%;
 }
 .weekly-sale-section .weekly-sale-wrap .weekly-body h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--n700);
   line-height: 130%;
@@ -2038,7 +2052,7 @@ iframe {
 }
 .classified-wrap .clssified-item .titles {
   color: var(--n500);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .classified-wrap .clssified-item:hover {
@@ -2247,7 +2261,7 @@ iframe {
   display: block;
 }
 .footer__widget .widget-head h5 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--n500);
 }
