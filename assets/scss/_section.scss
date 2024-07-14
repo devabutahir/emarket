@@ -817,6 +817,108 @@
 }
 // Sponsor Section
 
+// Product Adding in Cart
+.cart-adding-wrapper{
+    width: 315px;
+    height: 100vh;
+    background: var(--n0);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    overflow-y: scroll;
+    right: -320px;
+    top: 0;
+    transition: all 0.5s;
+    z-index: 999;
+    padding: 24px 24px 14px;
+    .cart-adding-list{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+       .cart-adding-list-items{
+        display: flex;
+        gap: 16px;
+        .thumb{
+            background: var(--border1);
+            border-radius: 4px;
+            min-width: 90px;
+            height: 95px;
+        }
+        .cont{
+            width: 100%;
+            a{
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--n500);
+            }
+            .store{
+                font-size: 13px;
+                color: var(--n100);
+                display: block;
+            }
+            .price{
+                font-size: 13px;
+                font-weight: 500;
+                color: var(--n500);
+            }
+            .cart-remove{
+                outline: none;
+                i{
+                    color: var(--n100);
+                }
+            }
+           .qtySelector {
+                i{
+                    cursor: pointer;
+                    color: var(--n500);
+                    min-width: 24px;
+                    min-height: 24px;
+                    font-size: 13px;
+                    border-radius: 50%;
+                    background-color: var(--border1);
+                }
+            }
+            .qtySelector .qtyValue {
+                border: none;
+                padding: 5px;
+                width: 34px;
+                color: var(--n100);
+            }
+        }
+       } 
+    }
+    .cart-adding-head{
+        width: 270px;
+        h6{
+            color: var(--n500);
+        }
+        button{
+            outline: none;
+            i{
+                font-size: 22px;
+            }
+        }
+    }
+    .cart-adding-footer{
+        text-align: center;
+        span{
+            color: var(--n500);
+        }
+        .cart-add{
+            background: var(--s1);
+            border-radius: 4px;
+            color: var(--n0);
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            padding: 9px 18px 11px;
+        }
+    }
+    &.active{
+        right: 0;
+    }
+}
+// Product Adding in Cart
+
 // Footer Section
 .footer-section{
     @media screen and (max-width: 991px) {

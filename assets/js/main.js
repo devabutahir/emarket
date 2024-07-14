@@ -21,7 +21,7 @@ $(window).on("scroll", function () {
   //--== Odometer Counter ==--//    
 
 //--Global SideBar--
- $('.toggleMain-controls .bar-toggles, .cmn-overlay').on('click', function () {
+$('.toggleMain-controls .bar-toggles, .cmn-overlay').on('click', function () {
   $('.toggleMain-controls .sidebar-wrapper, .cmn-overlay').toggleClass('active');
 });
 //--Global SideBar--    
@@ -435,6 +435,41 @@ $(".category-mobile-btn").on("click", function () {
   $(this).parent().next(".mobile-category-list").slideToggle();
 });
 //--== Custom Gategory ==--//
+
+$('.cart-area .remove').on('click', function () {
+  $(this).closest(".cart-adding-list-items").slideUp();
+});
+//Cart Adding Area
+$('.toggleMain-controls .cart-adding-togggle').on('click', function () {
+  $('.toggleMain-controls .cart-adding-wrapper').toggleClass('active');
+});
+
+  // Input Increase
+  var minVal = 1, maxVal = 20;
+  $(".increaseQty").on('click', function(){
+    var $parentElm = $(this).parents(".qtySelector");
+    $(this).addClass("clicked");
+    setTimeout(function(){
+        $(".clicked").removeClass("clicked");
+    },100);
+    var value = $parentElm.find(".qtyValue").val();
+    if (value < maxVal) {
+        value++;
+    }
+    $parentElm.find(".qtyValue").val(value);
+  });
+  $(".decreaseQty").on('click', function(){
+    var $parentElm = $(this).parents(".qtySelector");
+    $(this).addClass("clicked");
+    setTimeout(function(){
+        $(".clicked").removeClass("clicked");
+    },100);
+    var value = $parentElm.find(".qtyValue").val();
+    if (value > 1) {
+        value--;
+    }
+    $parentElm.find(".qtyValue").val(value);
+  });
 
 
 
