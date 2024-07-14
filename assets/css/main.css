@@ -2547,6 +2547,12 @@ iframe {
     gap: 6px;
     flex-wrap: wrap;
   }
+  .flash__deals .countdown .countdown-item {
+    padding: 6px 10px;
+  }
+  .flash__deals .countdown .countdown-item span {
+    font-size: 12px;
+  }
   .flash__deals .flash_header {
     margin-bottom: 24px;
   }
@@ -2561,17 +2567,18 @@ iframe {
   }
   .flash-deals-item .content .deals-name {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   .flash-deals-item .content h6 {
     margin-bottom: 10px;
   }
   .flash-deals-item .content h6 a {
     font-size: 16px;
+    line-height: 137%;
     font-weight: 500;
   }
   .flash-deals-item .content .ratting {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .flash-deals-item .content .ratting i {
     color: var(--s1);

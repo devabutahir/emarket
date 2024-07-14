@@ -45,6 +45,12 @@
         .countdown{
             gap: 6px;
             flex-wrap: wrap;
+            .countdown-item{
+                padding: 6px 10px;
+                span{
+                    font-size: 12px;
+                }
+            }
         }
         .flash_header{
             margin-bottom: 24px;
@@ -63,17 +69,18 @@
             padding: 14px;
             .deals-name{
                 font-size: 14px;
-                margin-bottom: 8px;
+                margin-bottom: 6px;
             }
             h6{
                 margin-bottom: 10px;
                 a{
                     font-size: 16px;
+                    line-height: 137%;
                     font-weight: 500;
                 }
             }
             .ratting{
-                margin-bottom: 12px;
+                margin-bottom: 10px;
                 i{
                     color: var(--s1);
                     font-size: 18px;
